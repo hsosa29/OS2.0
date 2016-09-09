@@ -1,0 +1,1 @@
+/home/hugo/Escritorio/OSv2.0/build/src/CMakeFiles/START.ELF.dir

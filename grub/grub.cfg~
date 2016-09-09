@@ -1,0 +1,14 @@
+menuentry "Proyecto Sistemas Operativos v2.0" {
+	echo "Booteando Proyecto Sistemas Operativos"
+	insmod vbe
+	multiboot /next/START.ELF
+	boot
+}
+menuentry "Apagar Sistema" {
+	echo "El sistema se esta apagando"
+	halt
+}
+menuentry "Reiniciar Sistema" {
+	echo "Reiniciando Sistema"
+	reboot
+}
