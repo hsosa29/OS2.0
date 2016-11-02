@@ -1,4 +1,4 @@
-# Install script for directory: /home/hugo/Escritorio/OSv2.0/iso
+# Install script for directory: /home/hugo/Escritorio/OSvFinal/iso
 
 # Set the install prefix
 IF(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -33,6 +33,6 @@ IF(NOT DEFINED CMAKE_INSTALL_SO_NO_EXE)
 ENDIF(NOT DEFINED CMAKE_INSTALL_SO_NO_EXE)
 
 IF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
-  FILE(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/.." TYPE PROGRAM FILES "/home/hugo/Escritorio/OSv2.0/iso/iso.sh")
+  FILE(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/.." TYPE PROGRAM FILES "/home/hugo/Escritorio/OSvFinal/iso/iso.sh")
 ENDIF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
 

@@ -1,12 +1,11 @@
 
-#include <ND_Screen.hpp>
-#include <ND_Color.hpp>
-#include <ND_Panic.hpp>
-#include <ND_Keyboard.hpp>
-#include <ND_GDT.hpp>
-#include <ND_IDT.hpp>
-#include <ND_IRQ.hpp>
-#include <ND_Timer.hpp>
+#include <Screen.hpp>
+#include <Color.hpp>
+
+#include <Keyboard.hpp>
+#include <GDT.hpp>
+#include <IDT.hpp>
+#include <IRQ.hpp>
 #include "Terminal.hpp"
 
 #if defined(__cplusplus)

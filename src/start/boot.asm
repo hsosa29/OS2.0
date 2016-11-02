@@ -18,3 +18,4 @@ loop: hlt
 	jmp loop
 .section ".bss"
 	.comm stack,0x4000
+

@@ -35,10 +35,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/hugo/Escritorio/OSv2.0
+CMAKE_SOURCE_DIR = /home/hugo/Escritorio/OSvFinal
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/hugo/Escritorio/OSv2.0/build
+CMAKE_BINARY_DIR = /home/hugo/Escritorio/OSvFinal/build
 
 # Include any dependencies generated for this target.
 include src/CMakeFiles/START.ELF.dir/depend.make
@@ -49,11 +49,26 @@ include src/CMakeFiles/START.ELF.dir/progress.make
 # Include the compile flags for this target's objects.
 include src/CMakeFiles/START.ELF.dir/flags.make
 
+src/CMakeFiles/START.ELF.dir/start/sound.asm.o: src/CMakeFiles/START.ELF.dir/flags.make
+src/CMakeFiles/START.ELF.dir/start/sound.asm.o: ../src/start/sound.asm
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/hugo/Escritorio/OSvFinal/build/CMakeFiles $(CMAKE_PROGRESS_1)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building ASM-ATT object src/CMakeFiles/START.ELF.dir/start/sound.asm.o"
+	cd /home/hugo/Escritorio/OSvFinal/build/src && /usr/bin/as  $(ASM-ATT_FLAGS) -o CMakeFiles/START.ELF.dir/start/sound.asm.o /home/hugo/Escritorio/OSvFinal/src/start/sound.asm
+
+src/CMakeFiles/START.ELF.dir/start/sound.asm.o.requires:
+.PHONY : src/CMakeFiles/START.ELF.dir/start/sound.asm.o.requires
+
+src/CMakeFiles/START.ELF.dir/start/sound.asm.o.provides: src/CMakeFiles/START.ELF.dir/start/sound.asm.o.requires
+	$(MAKE) -f src/CMakeFiles/START.ELF.dir/build.make src/CMakeFiles/START.ELF.dir/start/sound.asm.o.provides.build
+.PHONY : src/CMakeFiles/START.ELF.dir/start/sound.asm.o.provides
+
+src/CMakeFiles/START.ELF.dir/start/sound.asm.o.provides.build: src/CMakeFiles/START.ELF.dir/start/sound.asm.o
+
 src/CMakeFiles/START.ELF.dir/start/boot.asm.o: src/CMakeFiles/START.ELF.dir/flags.make
 src/CMakeFiles/START.ELF.dir/start/boot.asm.o: ../src/start/boot.asm
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/hugo/Escritorio/OSv2.0/build/CMakeFiles $(CMAKE_PROGRESS_1)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/hugo/Escritorio/OSvFinal/build/CMakeFiles $(CMAKE_PROGRESS_2)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building ASM-ATT object src/CMakeFiles/START.ELF.dir/start/boot.asm.o"
-	cd /home/hugo/Escritorio/OSv2.0/build/src && /usr/bin/as  $(ASM-ATT_FLAGS) -o CMakeFiles/START.ELF.dir/start/boot.asm.o /home/hugo/Escritorio/OSv2.0/src/start/boot.asm
+	cd /home/hugo/Escritorio/OSvFinal/build/src && /usr/bin/as  $(ASM-ATT_FLAGS) -o CMakeFiles/START.ELF.dir/start/boot.asm.o /home/hugo/Escritorio/OSvFinal/src/start/boot.asm
 
 src/CMakeFiles/START.ELF.dir/start/boot.asm.o.requires:
 .PHONY : src/CMakeFiles/START.ELF.dir/start/boot.asm.o.requires
@@ -64,42 +79,19 @@ src/CMakeFiles/START.ELF.dir/start/boot.asm.o.provides: src/CMakeFiles/START.ELF
 
 src/CMakeFiles/START.ELF.dir/start/boot.asm.o.provides.build: src/CMakeFiles/START.ELF.dir/start/boot.asm.o
 
-src/CMakeFiles/START.ELF.dir/start/ND_IDT.cpp.o: src/CMakeFiles/START.ELF.dir/flags.make
-src/CMakeFiles/START.ELF.dir/start/ND_IDT.cpp.o: ../src/start/ND_IDT.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/hugo/Escritorio/OSv2.0/build/CMakeFiles $(CMAKE_PROGRESS_2)
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object src/CMakeFiles/START.ELF.dir/start/ND_IDT.cpp.o"
-	cd /home/hugo/Escritorio/OSv2.0/build/src && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/START.ELF.dir/start/ND_IDT.cpp.o -c /home/hugo/Escritorio/OSv2.0/src/start/ND_IDT.cpp
-
-src/CMakeFiles/START.ELF.dir/start/ND_IDT.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/START.ELF.dir/start/ND_IDT.cpp.i"
-	cd /home/hugo/Escritorio/OSv2.0/build/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/hugo/Escritorio/OSv2.0/src/start/ND_IDT.cpp > CMakeFiles/START.ELF.dir/start/ND_IDT.cpp.i
-
-src/CMakeFiles/START.ELF.dir/start/ND_IDT.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/START.ELF.dir/start/ND_IDT.cpp.s"
-	cd /home/hugo/Escritorio/OSv2.0/build/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/hugo/Escritorio/OSv2.0/src/start/ND_IDT.cpp -o CMakeFiles/START.ELF.dir/start/ND_IDT.cpp.s
-
-src/CMakeFiles/START.ELF.dir/start/ND_IDT.cpp.o.requires:
-.PHONY : src/CMakeFiles/START.ELF.dir/start/ND_IDT.cpp.o.requires
-
-src/CMakeFiles/START.ELF.dir/start/ND_IDT.cpp.o.provides: src/CMakeFiles/START.ELF.dir/start/ND_IDT.cpp.o.requires
-	$(MAKE) -f src/CMakeFiles/START.ELF.dir/build.make src/CMakeFiles/START.ELF.dir/start/ND_IDT.cpp.o.provides.build
-.PHONY : src/CMakeFiles/START.ELF.dir/start/ND_IDT.cpp.o.provides
-
-src/CMakeFiles/START.ELF.dir/start/ND_IDT.cpp.o.provides.build: src/CMakeFiles/START.ELF.dir/start/ND_IDT.cpp.o
-
 src/CMakeFiles/START.ELF.dir/start/Terminal.cpp.o: src/CMakeFiles/START.ELF.dir/flags.make
 src/CMakeFiles/START.ELF.dir/start/Terminal.cpp.o: ../src/start/Terminal.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/hugo/Escritorio/OSv2.0/build/CMakeFiles $(CMAKE_PROGRESS_3)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/hugo/Escritorio/OSvFinal/build/CMakeFiles $(CMAKE_PROGRESS_3)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object src/CMakeFiles/START.ELF.dir/start/Terminal.cpp.o"
-	cd /home/hugo/Escritorio/OSv2.0/build/src && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/START.ELF.dir/start/Terminal.cpp.o -c /home/hugo/Escritorio/OSv2.0/src/start/Terminal.cpp
+	cd /home/hugo/Escritorio/OSvFinal/build/src && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/START.ELF.dir/start/Terminal.cpp.o -c /home/hugo/Escritorio/OSvFinal/src/start/Terminal.cpp
 
 src/CMakeFiles/START.ELF.dir/start/Terminal.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/START.ELF.dir/start/Terminal.cpp.i"
-	cd /home/hugo/Escritorio/OSv2.0/build/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/hugo/Escritorio/OSv2.0/src/start/Terminal.cpp > CMakeFiles/START.ELF.dir/start/Terminal.cpp.i
+	cd /home/hugo/Escritorio/OSvFinal/build/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/hugo/Escritorio/OSvFinal/src/start/Terminal.cpp > CMakeFiles/START.ELF.dir/start/Terminal.cpp.i
 
 src/CMakeFiles/START.ELF.dir/start/Terminal.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/START.ELF.dir/start/Terminal.cpp.s"
-	cd /home/hugo/Escritorio/OSv2.0/build/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/hugo/Escritorio/OSv2.0/src/start/Terminal.cpp -o CMakeFiles/START.ELF.dir/start/Terminal.cpp.s
+	cd /home/hugo/Escritorio/OSvFinal/build/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/hugo/Escritorio/OSvFinal/src/start/Terminal.cpp -o CMakeFiles/START.ELF.dir/start/Terminal.cpp.s
 
 src/CMakeFiles/START.ELF.dir/start/Terminal.cpp.o.requires:
 .PHONY : src/CMakeFiles/START.ELF.dir/start/Terminal.cpp.o.requires
@@ -110,157 +102,134 @@ src/CMakeFiles/START.ELF.dir/start/Terminal.cpp.o.provides: src/CMakeFiles/START
 
 src/CMakeFiles/START.ELF.dir/start/Terminal.cpp.o.provides.build: src/CMakeFiles/START.ELF.dir/start/Terminal.cpp.o
 
-src/CMakeFiles/START.ELF.dir/start/ND_Ports.cpp.o: src/CMakeFiles/START.ELF.dir/flags.make
-src/CMakeFiles/START.ELF.dir/start/ND_Ports.cpp.o: ../src/start/ND_Ports.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/hugo/Escritorio/OSv2.0/build/CMakeFiles $(CMAKE_PROGRESS_4)
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object src/CMakeFiles/START.ELF.dir/start/ND_Ports.cpp.o"
-	cd /home/hugo/Escritorio/OSv2.0/build/src && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/START.ELF.dir/start/ND_Ports.cpp.o -c /home/hugo/Escritorio/OSv2.0/src/start/ND_Ports.cpp
+src/CMakeFiles/START.ELF.dir/start/IRQ.cpp.o: src/CMakeFiles/START.ELF.dir/flags.make
+src/CMakeFiles/START.ELF.dir/start/IRQ.cpp.o: ../src/start/IRQ.cpp
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/hugo/Escritorio/OSvFinal/build/CMakeFiles $(CMAKE_PROGRESS_4)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object src/CMakeFiles/START.ELF.dir/start/IRQ.cpp.o"
+	cd /home/hugo/Escritorio/OSvFinal/build/src && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/START.ELF.dir/start/IRQ.cpp.o -c /home/hugo/Escritorio/OSvFinal/src/start/IRQ.cpp
 
-src/CMakeFiles/START.ELF.dir/start/ND_Ports.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/START.ELF.dir/start/ND_Ports.cpp.i"
-	cd /home/hugo/Escritorio/OSv2.0/build/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/hugo/Escritorio/OSv2.0/src/start/ND_Ports.cpp > CMakeFiles/START.ELF.dir/start/ND_Ports.cpp.i
+src/CMakeFiles/START.ELF.dir/start/IRQ.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/START.ELF.dir/start/IRQ.cpp.i"
+	cd /home/hugo/Escritorio/OSvFinal/build/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/hugo/Escritorio/OSvFinal/src/start/IRQ.cpp > CMakeFiles/START.ELF.dir/start/IRQ.cpp.i
 
-src/CMakeFiles/START.ELF.dir/start/ND_Ports.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/START.ELF.dir/start/ND_Ports.cpp.s"
-	cd /home/hugo/Escritorio/OSv2.0/build/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/hugo/Escritorio/OSv2.0/src/start/ND_Ports.cpp -o CMakeFiles/START.ELF.dir/start/ND_Ports.cpp.s
+src/CMakeFiles/START.ELF.dir/start/IRQ.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/START.ELF.dir/start/IRQ.cpp.s"
+	cd /home/hugo/Escritorio/OSvFinal/build/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/hugo/Escritorio/OSvFinal/src/start/IRQ.cpp -o CMakeFiles/START.ELF.dir/start/IRQ.cpp.s
 
-src/CMakeFiles/START.ELF.dir/start/ND_Ports.cpp.o.requires:
-.PHONY : src/CMakeFiles/START.ELF.dir/start/ND_Ports.cpp.o.requires
+src/CMakeFiles/START.ELF.dir/start/IRQ.cpp.o.requires:
+.PHONY : src/CMakeFiles/START.ELF.dir/start/IRQ.cpp.o.requires
 
-src/CMakeFiles/START.ELF.dir/start/ND_Ports.cpp.o.provides: src/CMakeFiles/START.ELF.dir/start/ND_Ports.cpp.o.requires
-	$(MAKE) -f src/CMakeFiles/START.ELF.dir/build.make src/CMakeFiles/START.ELF.dir/start/ND_Ports.cpp.o.provides.build
-.PHONY : src/CMakeFiles/START.ELF.dir/start/ND_Ports.cpp.o.provides
+src/CMakeFiles/START.ELF.dir/start/IRQ.cpp.o.provides: src/CMakeFiles/START.ELF.dir/start/IRQ.cpp.o.requires
+	$(MAKE) -f src/CMakeFiles/START.ELF.dir/build.make src/CMakeFiles/START.ELF.dir/start/IRQ.cpp.o.provides.build
+.PHONY : src/CMakeFiles/START.ELF.dir/start/IRQ.cpp.o.provides
 
-src/CMakeFiles/START.ELF.dir/start/ND_Ports.cpp.o.provides.build: src/CMakeFiles/START.ELF.dir/start/ND_Ports.cpp.o
+src/CMakeFiles/START.ELF.dir/start/IRQ.cpp.o.provides.build: src/CMakeFiles/START.ELF.dir/start/IRQ.cpp.o
 
-src/CMakeFiles/START.ELF.dir/start/ND_Panic.cpp.o: src/CMakeFiles/START.ELF.dir/flags.make
-src/CMakeFiles/START.ELF.dir/start/ND_Panic.cpp.o: ../src/start/ND_Panic.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/hugo/Escritorio/OSv2.0/build/CMakeFiles $(CMAKE_PROGRESS_5)
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object src/CMakeFiles/START.ELF.dir/start/ND_Panic.cpp.o"
-	cd /home/hugo/Escritorio/OSv2.0/build/src && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/START.ELF.dir/start/ND_Panic.cpp.o -c /home/hugo/Escritorio/OSv2.0/src/start/ND_Panic.cpp
+src/CMakeFiles/START.ELF.dir/start/String.cpp.o: src/CMakeFiles/START.ELF.dir/flags.make
+src/CMakeFiles/START.ELF.dir/start/String.cpp.o: ../src/start/String.cpp
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/hugo/Escritorio/OSvFinal/build/CMakeFiles $(CMAKE_PROGRESS_5)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object src/CMakeFiles/START.ELF.dir/start/String.cpp.o"
+	cd /home/hugo/Escritorio/OSvFinal/build/src && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/START.ELF.dir/start/String.cpp.o -c /home/hugo/Escritorio/OSvFinal/src/start/String.cpp
 
-src/CMakeFiles/START.ELF.dir/start/ND_Panic.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/START.ELF.dir/start/ND_Panic.cpp.i"
-	cd /home/hugo/Escritorio/OSv2.0/build/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/hugo/Escritorio/OSv2.0/src/start/ND_Panic.cpp > CMakeFiles/START.ELF.dir/start/ND_Panic.cpp.i
+src/CMakeFiles/START.ELF.dir/start/String.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/START.ELF.dir/start/String.cpp.i"
+	cd /home/hugo/Escritorio/OSvFinal/build/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/hugo/Escritorio/OSvFinal/src/start/String.cpp > CMakeFiles/START.ELF.dir/start/String.cpp.i
 
-src/CMakeFiles/START.ELF.dir/start/ND_Panic.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/START.ELF.dir/start/ND_Panic.cpp.s"
-	cd /home/hugo/Escritorio/OSv2.0/build/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/hugo/Escritorio/OSv2.0/src/start/ND_Panic.cpp -o CMakeFiles/START.ELF.dir/start/ND_Panic.cpp.s
+src/CMakeFiles/START.ELF.dir/start/String.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/START.ELF.dir/start/String.cpp.s"
+	cd /home/hugo/Escritorio/OSvFinal/build/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/hugo/Escritorio/OSvFinal/src/start/String.cpp -o CMakeFiles/START.ELF.dir/start/String.cpp.s
 
-src/CMakeFiles/START.ELF.dir/start/ND_Panic.cpp.o.requires:
-.PHONY : src/CMakeFiles/START.ELF.dir/start/ND_Panic.cpp.o.requires
+src/CMakeFiles/START.ELF.dir/start/String.cpp.o.requires:
+.PHONY : src/CMakeFiles/START.ELF.dir/start/String.cpp.o.requires
 
-src/CMakeFiles/START.ELF.dir/start/ND_Panic.cpp.o.provides: src/CMakeFiles/START.ELF.dir/start/ND_Panic.cpp.o.requires
-	$(MAKE) -f src/CMakeFiles/START.ELF.dir/build.make src/CMakeFiles/START.ELF.dir/start/ND_Panic.cpp.o.provides.build
-.PHONY : src/CMakeFiles/START.ELF.dir/start/ND_Panic.cpp.o.provides
+src/CMakeFiles/START.ELF.dir/start/String.cpp.o.provides: src/CMakeFiles/START.ELF.dir/start/String.cpp.o.requires
+	$(MAKE) -f src/CMakeFiles/START.ELF.dir/build.make src/CMakeFiles/START.ELF.dir/start/String.cpp.o.provides.build
+.PHONY : src/CMakeFiles/START.ELF.dir/start/String.cpp.o.provides
 
-src/CMakeFiles/START.ELF.dir/start/ND_Panic.cpp.o.provides.build: src/CMakeFiles/START.ELF.dir/start/ND_Panic.cpp.o
+src/CMakeFiles/START.ELF.dir/start/String.cpp.o.provides.build: src/CMakeFiles/START.ELF.dir/start/String.cpp.o
 
-src/CMakeFiles/START.ELF.dir/start/ND_IRQ.cpp.o: src/CMakeFiles/START.ELF.dir/flags.make
-src/CMakeFiles/START.ELF.dir/start/ND_IRQ.cpp.o: ../src/start/ND_IRQ.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/hugo/Escritorio/OSv2.0/build/CMakeFiles $(CMAKE_PROGRESS_6)
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object src/CMakeFiles/START.ELF.dir/start/ND_IRQ.cpp.o"
-	cd /home/hugo/Escritorio/OSv2.0/build/src && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/START.ELF.dir/start/ND_IRQ.cpp.o -c /home/hugo/Escritorio/OSv2.0/src/start/ND_IRQ.cpp
+src/CMakeFiles/START.ELF.dir/start/Memory.cpp.o: src/CMakeFiles/START.ELF.dir/flags.make
+src/CMakeFiles/START.ELF.dir/start/Memory.cpp.o: ../src/start/Memory.cpp
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/hugo/Escritorio/OSvFinal/build/CMakeFiles $(CMAKE_PROGRESS_6)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object src/CMakeFiles/START.ELF.dir/start/Memory.cpp.o"
+	cd /home/hugo/Escritorio/OSvFinal/build/src && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/START.ELF.dir/start/Memory.cpp.o -c /home/hugo/Escritorio/OSvFinal/src/start/Memory.cpp
 
-src/CMakeFiles/START.ELF.dir/start/ND_IRQ.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/START.ELF.dir/start/ND_IRQ.cpp.i"
-	cd /home/hugo/Escritorio/OSv2.0/build/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/hugo/Escritorio/OSv2.0/src/start/ND_IRQ.cpp > CMakeFiles/START.ELF.dir/start/ND_IRQ.cpp.i
+src/CMakeFiles/START.ELF.dir/start/Memory.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/START.ELF.dir/start/Memory.cpp.i"
+	cd /home/hugo/Escritorio/OSvFinal/build/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/hugo/Escritorio/OSvFinal/src/start/Memory.cpp > CMakeFiles/START.ELF.dir/start/Memory.cpp.i
 
-src/CMakeFiles/START.ELF.dir/start/ND_IRQ.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/START.ELF.dir/start/ND_IRQ.cpp.s"
-	cd /home/hugo/Escritorio/OSv2.0/build/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/hugo/Escritorio/OSv2.0/src/start/ND_IRQ.cpp -o CMakeFiles/START.ELF.dir/start/ND_IRQ.cpp.s
+src/CMakeFiles/START.ELF.dir/start/Memory.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/START.ELF.dir/start/Memory.cpp.s"
+	cd /home/hugo/Escritorio/OSvFinal/build/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/hugo/Escritorio/OSvFinal/src/start/Memory.cpp -o CMakeFiles/START.ELF.dir/start/Memory.cpp.s
 
-src/CMakeFiles/START.ELF.dir/start/ND_IRQ.cpp.o.requires:
-.PHONY : src/CMakeFiles/START.ELF.dir/start/ND_IRQ.cpp.o.requires
+src/CMakeFiles/START.ELF.dir/start/Memory.cpp.o.requires:
+.PHONY : src/CMakeFiles/START.ELF.dir/start/Memory.cpp.o.requires
 
-src/CMakeFiles/START.ELF.dir/start/ND_IRQ.cpp.o.provides: src/CMakeFiles/START.ELF.dir/start/ND_IRQ.cpp.o.requires
-	$(MAKE) -f src/CMakeFiles/START.ELF.dir/build.make src/CMakeFiles/START.ELF.dir/start/ND_IRQ.cpp.o.provides.build
-.PHONY : src/CMakeFiles/START.ELF.dir/start/ND_IRQ.cpp.o.provides
+src/CMakeFiles/START.ELF.dir/start/Memory.cpp.o.provides: src/CMakeFiles/START.ELF.dir/start/Memory.cpp.o.requires
+	$(MAKE) -f src/CMakeFiles/START.ELF.dir/build.make src/CMakeFiles/START.ELF.dir/start/Memory.cpp.o.provides.build
+.PHONY : src/CMakeFiles/START.ELF.dir/start/Memory.cpp.o.provides
 
-src/CMakeFiles/START.ELF.dir/start/ND_IRQ.cpp.o.provides.build: src/CMakeFiles/START.ELF.dir/start/ND_IRQ.cpp.o
+src/CMakeFiles/START.ELF.dir/start/Memory.cpp.o.provides.build: src/CMakeFiles/START.ELF.dir/start/Memory.cpp.o
 
-src/CMakeFiles/START.ELF.dir/start/ND_ISR.cpp.o: src/CMakeFiles/START.ELF.dir/flags.make
-src/CMakeFiles/START.ELF.dir/start/ND_ISR.cpp.o: ../src/start/ND_ISR.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/hugo/Escritorio/OSv2.0/build/CMakeFiles $(CMAKE_PROGRESS_7)
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object src/CMakeFiles/START.ELF.dir/start/ND_ISR.cpp.o"
-	cd /home/hugo/Escritorio/OSv2.0/build/src && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/START.ELF.dir/start/ND_ISR.cpp.o -c /home/hugo/Escritorio/OSv2.0/src/start/ND_ISR.cpp
+src/CMakeFiles/START.ELF.dir/start/Keyboard.cpp.o: src/CMakeFiles/START.ELF.dir/flags.make
+src/CMakeFiles/START.ELF.dir/start/Keyboard.cpp.o: ../src/start/Keyboard.cpp
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/hugo/Escritorio/OSvFinal/build/CMakeFiles $(CMAKE_PROGRESS_7)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object src/CMakeFiles/START.ELF.dir/start/Keyboard.cpp.o"
+	cd /home/hugo/Escritorio/OSvFinal/build/src && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/START.ELF.dir/start/Keyboard.cpp.o -c /home/hugo/Escritorio/OSvFinal/src/start/Keyboard.cpp
 
-src/CMakeFiles/START.ELF.dir/start/ND_ISR.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/START.ELF.dir/start/ND_ISR.cpp.i"
-	cd /home/hugo/Escritorio/OSv2.0/build/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/hugo/Escritorio/OSv2.0/src/start/ND_ISR.cpp > CMakeFiles/START.ELF.dir/start/ND_ISR.cpp.i
+src/CMakeFiles/START.ELF.dir/start/Keyboard.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/START.ELF.dir/start/Keyboard.cpp.i"
+	cd /home/hugo/Escritorio/OSvFinal/build/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/hugo/Escritorio/OSvFinal/src/start/Keyboard.cpp > CMakeFiles/START.ELF.dir/start/Keyboard.cpp.i
 
-src/CMakeFiles/START.ELF.dir/start/ND_ISR.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/START.ELF.dir/start/ND_ISR.cpp.s"
-	cd /home/hugo/Escritorio/OSv2.0/build/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/hugo/Escritorio/OSv2.0/src/start/ND_ISR.cpp -o CMakeFiles/START.ELF.dir/start/ND_ISR.cpp.s
+src/CMakeFiles/START.ELF.dir/start/Keyboard.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/START.ELF.dir/start/Keyboard.cpp.s"
+	cd /home/hugo/Escritorio/OSvFinal/build/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/hugo/Escritorio/OSvFinal/src/start/Keyboard.cpp -o CMakeFiles/START.ELF.dir/start/Keyboard.cpp.s
 
-src/CMakeFiles/START.ELF.dir/start/ND_ISR.cpp.o.requires:
-.PHONY : src/CMakeFiles/START.ELF.dir/start/ND_ISR.cpp.o.requires
+src/CMakeFiles/START.ELF.dir/start/Keyboard.cpp.o.requires:
+.PHONY : src/CMakeFiles/START.ELF.dir/start/Keyboard.cpp.o.requires
 
-src/CMakeFiles/START.ELF.dir/start/ND_ISR.cpp.o.provides: src/CMakeFiles/START.ELF.dir/start/ND_ISR.cpp.o.requires
-	$(MAKE) -f src/CMakeFiles/START.ELF.dir/build.make src/CMakeFiles/START.ELF.dir/start/ND_ISR.cpp.o.provides.build
-.PHONY : src/CMakeFiles/START.ELF.dir/start/ND_ISR.cpp.o.provides
+src/CMakeFiles/START.ELF.dir/start/Keyboard.cpp.o.provides: src/CMakeFiles/START.ELF.dir/start/Keyboard.cpp.o.requires
+	$(MAKE) -f src/CMakeFiles/START.ELF.dir/build.make src/CMakeFiles/START.ELF.dir/start/Keyboard.cpp.o.provides.build
+.PHONY : src/CMakeFiles/START.ELF.dir/start/Keyboard.cpp.o.provides
 
-src/CMakeFiles/START.ELF.dir/start/ND_ISR.cpp.o.provides.build: src/CMakeFiles/START.ELF.dir/start/ND_ISR.cpp.o
+src/CMakeFiles/START.ELF.dir/start/Keyboard.cpp.o.provides.build: src/CMakeFiles/START.ELF.dir/start/Keyboard.cpp.o
 
-src/CMakeFiles/START.ELF.dir/start/ND_Screen.cpp.o: src/CMakeFiles/START.ELF.dir/flags.make
-src/CMakeFiles/START.ELF.dir/start/ND_Screen.cpp.o: ../src/start/ND_Screen.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/hugo/Escritorio/OSv2.0/build/CMakeFiles $(CMAKE_PROGRESS_8)
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object src/CMakeFiles/START.ELF.dir/start/ND_Screen.cpp.o"
-	cd /home/hugo/Escritorio/OSv2.0/build/src && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/START.ELF.dir/start/ND_Screen.cpp.o -c /home/hugo/Escritorio/OSv2.0/src/start/ND_Screen.cpp
+src/CMakeFiles/START.ELF.dir/start/Ports.cpp.o: src/CMakeFiles/START.ELF.dir/flags.make
+src/CMakeFiles/START.ELF.dir/start/Ports.cpp.o: ../src/start/Ports.cpp
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/hugo/Escritorio/OSvFinal/build/CMakeFiles $(CMAKE_PROGRESS_8)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object src/CMakeFiles/START.ELF.dir/start/Ports.cpp.o"
+	cd /home/hugo/Escritorio/OSvFinal/build/src && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/START.ELF.dir/start/Ports.cpp.o -c /home/hugo/Escritorio/OSvFinal/src/start/Ports.cpp
 
-src/CMakeFiles/START.ELF.dir/start/ND_Screen.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/START.ELF.dir/start/ND_Screen.cpp.i"
-	cd /home/hugo/Escritorio/OSv2.0/build/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/hugo/Escritorio/OSv2.0/src/start/ND_Screen.cpp > CMakeFiles/START.ELF.dir/start/ND_Screen.cpp.i
+src/CMakeFiles/START.ELF.dir/start/Ports.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/START.ELF.dir/start/Ports.cpp.i"
+	cd /home/hugo/Escritorio/OSvFinal/build/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/hugo/Escritorio/OSvFinal/src/start/Ports.cpp > CMakeFiles/START.ELF.dir/start/Ports.cpp.i
 
-src/CMakeFiles/START.ELF.dir/start/ND_Screen.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/START.ELF.dir/start/ND_Screen.cpp.s"
-	cd /home/hugo/Escritorio/OSv2.0/build/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/hugo/Escritorio/OSv2.0/src/start/ND_Screen.cpp -o CMakeFiles/START.ELF.dir/start/ND_Screen.cpp.s
+src/CMakeFiles/START.ELF.dir/start/Ports.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/START.ELF.dir/start/Ports.cpp.s"
+	cd /home/hugo/Escritorio/OSvFinal/build/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/hugo/Escritorio/OSvFinal/src/start/Ports.cpp -o CMakeFiles/START.ELF.dir/start/Ports.cpp.s
 
-src/CMakeFiles/START.ELF.dir/start/ND_Screen.cpp.o.requires:
-.PHONY : src/CMakeFiles/START.ELF.dir/start/ND_Screen.cpp.o.requires
+src/CMakeFiles/START.ELF.dir/start/Ports.cpp.o.requires:
+.PHONY : src/CMakeFiles/START.ELF.dir/start/Ports.cpp.o.requires
 
-src/CMakeFiles/START.ELF.dir/start/ND_Screen.cpp.o.provides: src/CMakeFiles/START.ELF.dir/start/ND_Screen.cpp.o.requires
-	$(MAKE) -f src/CMakeFiles/START.ELF.dir/build.make src/CMakeFiles/START.ELF.dir/start/ND_Screen.cpp.o.provides.build
-.PHONY : src/CMakeFiles/START.ELF.dir/start/ND_Screen.cpp.o.provides
+src/CMakeFiles/START.ELF.dir/start/Ports.cpp.o.provides: src/CMakeFiles/START.ELF.dir/start/Ports.cpp.o.requires
+	$(MAKE) -f src/CMakeFiles/START.ELF.dir/build.make src/CMakeFiles/START.ELF.dir/start/Ports.cpp.o.provides.build
+.PHONY : src/CMakeFiles/START.ELF.dir/start/Ports.cpp.o.provides
 
-src/CMakeFiles/START.ELF.dir/start/ND_Screen.cpp.o.provides.build: src/CMakeFiles/START.ELF.dir/start/ND_Screen.cpp.o
-
-src/CMakeFiles/START.ELF.dir/start/ND_Memory.cpp.o: src/CMakeFiles/START.ELF.dir/flags.make
-src/CMakeFiles/START.ELF.dir/start/ND_Memory.cpp.o: ../src/start/ND_Memory.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/hugo/Escritorio/OSv2.0/build/CMakeFiles $(CMAKE_PROGRESS_9)
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object src/CMakeFiles/START.ELF.dir/start/ND_Memory.cpp.o"
-	cd /home/hugo/Escritorio/OSv2.0/build/src && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/START.ELF.dir/start/ND_Memory.cpp.o -c /home/hugo/Escritorio/OSv2.0/src/start/ND_Memory.cpp
-
-src/CMakeFiles/START.ELF.dir/start/ND_Memory.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/START.ELF.dir/start/ND_Memory.cpp.i"
-	cd /home/hugo/Escritorio/OSv2.0/build/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/hugo/Escritorio/OSv2.0/src/start/ND_Memory.cpp > CMakeFiles/START.ELF.dir/start/ND_Memory.cpp.i
-
-src/CMakeFiles/START.ELF.dir/start/ND_Memory.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/START.ELF.dir/start/ND_Memory.cpp.s"
-	cd /home/hugo/Escritorio/OSv2.0/build/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/hugo/Escritorio/OSv2.0/src/start/ND_Memory.cpp -o CMakeFiles/START.ELF.dir/start/ND_Memory.cpp.s
-
-src/CMakeFiles/START.ELF.dir/start/ND_Memory.cpp.o.requires:
-.PHONY : src/CMakeFiles/START.ELF.dir/start/ND_Memory.cpp.o.requires
-
-src/CMakeFiles/START.ELF.dir/start/ND_Memory.cpp.o.provides: src/CMakeFiles/START.ELF.dir/start/ND_Memory.cpp.o.requires
-	$(MAKE) -f src/CMakeFiles/START.ELF.dir/build.make src/CMakeFiles/START.ELF.dir/start/ND_Memory.cpp.o.provides.build
-.PHONY : src/CMakeFiles/START.ELF.dir/start/ND_Memory.cpp.o.provides
-
-src/CMakeFiles/START.ELF.dir/start/ND_Memory.cpp.o.provides.build: src/CMakeFiles/START.ELF.dir/start/ND_Memory.cpp.o
+src/CMakeFiles/START.ELF.dir/start/Ports.cpp.o.provides.build: src/CMakeFiles/START.ELF.dir/start/Ports.cpp.o
 
 src/CMakeFiles/START.ELF.dir/start/Kernel.cpp.o: src/CMakeFiles/START.ELF.dir/flags.make
 src/CMakeFiles/START.ELF.dir/start/Kernel.cpp.o: ../src/start/Kernel.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/hugo/Escritorio/OSv2.0/build/CMakeFiles $(CMAKE_PROGRESS_10)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/hugo/Escritorio/OSvFinal/build/CMakeFiles $(CMAKE_PROGRESS_9)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object src/CMakeFiles/START.ELF.dir/start/Kernel.cpp.o"
-	cd /home/hugo/Escritorio/OSv2.0/build/src && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/START.ELF.dir/start/Kernel.cpp.o -c /home/hugo/Escritorio/OSv2.0/src/start/Kernel.cpp
+	cd /home/hugo/Escritorio/OSvFinal/build/src && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/START.ELF.dir/start/Kernel.cpp.o -c /home/hugo/Escritorio/OSvFinal/src/start/Kernel.cpp
 
 src/CMakeFiles/START.ELF.dir/start/Kernel.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/START.ELF.dir/start/Kernel.cpp.i"
-	cd /home/hugo/Escritorio/OSv2.0/build/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/hugo/Escritorio/OSv2.0/src/start/Kernel.cpp > CMakeFiles/START.ELF.dir/start/Kernel.cpp.i
+	cd /home/hugo/Escritorio/OSvFinal/build/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/hugo/Escritorio/OSvFinal/src/start/Kernel.cpp > CMakeFiles/START.ELF.dir/start/Kernel.cpp.i
 
 src/CMakeFiles/START.ELF.dir/start/Kernel.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/START.ELF.dir/start/Kernel.cpp.s"
-	cd /home/hugo/Escritorio/OSv2.0/build/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/hugo/Escritorio/OSv2.0/src/start/Kernel.cpp -o CMakeFiles/START.ELF.dir/start/Kernel.cpp.s
+	cd /home/hugo/Escritorio/OSvFinal/build/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/hugo/Escritorio/OSvFinal/src/start/Kernel.cpp -o CMakeFiles/START.ELF.dir/start/Kernel.cpp.s
 
 src/CMakeFiles/START.ELF.dir/start/Kernel.cpp.o.requires:
 .PHONY : src/CMakeFiles/START.ELF.dir/start/Kernel.cpp.o.requires
@@ -271,162 +240,159 @@ src/CMakeFiles/START.ELF.dir/start/Kernel.cpp.o.provides: src/CMakeFiles/START.E
 
 src/CMakeFiles/START.ELF.dir/start/Kernel.cpp.o.provides.build: src/CMakeFiles/START.ELF.dir/start/Kernel.cpp.o
 
-src/CMakeFiles/START.ELF.dir/start/ND_GDT.cpp.o: src/CMakeFiles/START.ELF.dir/flags.make
-src/CMakeFiles/START.ELF.dir/start/ND_GDT.cpp.o: ../src/start/ND_GDT.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/hugo/Escritorio/OSv2.0/build/CMakeFiles $(CMAKE_PROGRESS_11)
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object src/CMakeFiles/START.ELF.dir/start/ND_GDT.cpp.o"
-	cd /home/hugo/Escritorio/OSv2.0/build/src && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/START.ELF.dir/start/ND_GDT.cpp.o -c /home/hugo/Escritorio/OSv2.0/src/start/ND_GDT.cpp
+src/CMakeFiles/START.ELF.dir/start/Screen.cpp.o: src/CMakeFiles/START.ELF.dir/flags.make
+src/CMakeFiles/START.ELF.dir/start/Screen.cpp.o: ../src/start/Screen.cpp
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/hugo/Escritorio/OSvFinal/build/CMakeFiles $(CMAKE_PROGRESS_10)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object src/CMakeFiles/START.ELF.dir/start/Screen.cpp.o"
+	cd /home/hugo/Escritorio/OSvFinal/build/src && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/START.ELF.dir/start/Screen.cpp.o -c /home/hugo/Escritorio/OSvFinal/src/start/Screen.cpp
 
-src/CMakeFiles/START.ELF.dir/start/ND_GDT.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/START.ELF.dir/start/ND_GDT.cpp.i"
-	cd /home/hugo/Escritorio/OSv2.0/build/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/hugo/Escritorio/OSv2.0/src/start/ND_GDT.cpp > CMakeFiles/START.ELF.dir/start/ND_GDT.cpp.i
+src/CMakeFiles/START.ELF.dir/start/Screen.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/START.ELF.dir/start/Screen.cpp.i"
+	cd /home/hugo/Escritorio/OSvFinal/build/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/hugo/Escritorio/OSvFinal/src/start/Screen.cpp > CMakeFiles/START.ELF.dir/start/Screen.cpp.i
 
-src/CMakeFiles/START.ELF.dir/start/ND_GDT.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/START.ELF.dir/start/ND_GDT.cpp.s"
-	cd /home/hugo/Escritorio/OSv2.0/build/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/hugo/Escritorio/OSv2.0/src/start/ND_GDT.cpp -o CMakeFiles/START.ELF.dir/start/ND_GDT.cpp.s
+src/CMakeFiles/START.ELF.dir/start/Screen.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/START.ELF.dir/start/Screen.cpp.s"
+	cd /home/hugo/Escritorio/OSvFinal/build/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/hugo/Escritorio/OSvFinal/src/start/Screen.cpp -o CMakeFiles/START.ELF.dir/start/Screen.cpp.s
 
-src/CMakeFiles/START.ELF.dir/start/ND_GDT.cpp.o.requires:
-.PHONY : src/CMakeFiles/START.ELF.dir/start/ND_GDT.cpp.o.requires
+src/CMakeFiles/START.ELF.dir/start/Screen.cpp.o.requires:
+.PHONY : src/CMakeFiles/START.ELF.dir/start/Screen.cpp.o.requires
 
-src/CMakeFiles/START.ELF.dir/start/ND_GDT.cpp.o.provides: src/CMakeFiles/START.ELF.dir/start/ND_GDT.cpp.o.requires
-	$(MAKE) -f src/CMakeFiles/START.ELF.dir/build.make src/CMakeFiles/START.ELF.dir/start/ND_GDT.cpp.o.provides.build
-.PHONY : src/CMakeFiles/START.ELF.dir/start/ND_GDT.cpp.o.provides
+src/CMakeFiles/START.ELF.dir/start/Screen.cpp.o.provides: src/CMakeFiles/START.ELF.dir/start/Screen.cpp.o.requires
+	$(MAKE) -f src/CMakeFiles/START.ELF.dir/build.make src/CMakeFiles/START.ELF.dir/start/Screen.cpp.o.provides.build
+.PHONY : src/CMakeFiles/START.ELF.dir/start/Screen.cpp.o.provides
 
-src/CMakeFiles/START.ELF.dir/start/ND_GDT.cpp.o.provides.build: src/CMakeFiles/START.ELF.dir/start/ND_GDT.cpp.o
+src/CMakeFiles/START.ELF.dir/start/Screen.cpp.o.provides.build: src/CMakeFiles/START.ELF.dir/start/Screen.cpp.o
 
-src/CMakeFiles/START.ELF.dir/start/ND_Keyboard.cpp.o: src/CMakeFiles/START.ELF.dir/flags.make
-src/CMakeFiles/START.ELF.dir/start/ND_Keyboard.cpp.o: ../src/start/ND_Keyboard.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/hugo/Escritorio/OSv2.0/build/CMakeFiles $(CMAKE_PROGRESS_12)
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object src/CMakeFiles/START.ELF.dir/start/ND_Keyboard.cpp.o"
-	cd /home/hugo/Escritorio/OSv2.0/build/src && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/START.ELF.dir/start/ND_Keyboard.cpp.o -c /home/hugo/Escritorio/OSv2.0/src/start/ND_Keyboard.cpp
+src/CMakeFiles/START.ELF.dir/start/IDT.cpp.o: src/CMakeFiles/START.ELF.dir/flags.make
+src/CMakeFiles/START.ELF.dir/start/IDT.cpp.o: ../src/start/IDT.cpp
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/hugo/Escritorio/OSvFinal/build/CMakeFiles $(CMAKE_PROGRESS_11)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object src/CMakeFiles/START.ELF.dir/start/IDT.cpp.o"
+	cd /home/hugo/Escritorio/OSvFinal/build/src && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/START.ELF.dir/start/IDT.cpp.o -c /home/hugo/Escritorio/OSvFinal/src/start/IDT.cpp
 
-src/CMakeFiles/START.ELF.dir/start/ND_Keyboard.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/START.ELF.dir/start/ND_Keyboard.cpp.i"
-	cd /home/hugo/Escritorio/OSv2.0/build/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/hugo/Escritorio/OSv2.0/src/start/ND_Keyboard.cpp > CMakeFiles/START.ELF.dir/start/ND_Keyboard.cpp.i
+src/CMakeFiles/START.ELF.dir/start/IDT.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/START.ELF.dir/start/IDT.cpp.i"
+	cd /home/hugo/Escritorio/OSvFinal/build/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/hugo/Escritorio/OSvFinal/src/start/IDT.cpp > CMakeFiles/START.ELF.dir/start/IDT.cpp.i
 
-src/CMakeFiles/START.ELF.dir/start/ND_Keyboard.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/START.ELF.dir/start/ND_Keyboard.cpp.s"
-	cd /home/hugo/Escritorio/OSv2.0/build/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/hugo/Escritorio/OSv2.0/src/start/ND_Keyboard.cpp -o CMakeFiles/START.ELF.dir/start/ND_Keyboard.cpp.s
+src/CMakeFiles/START.ELF.dir/start/IDT.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/START.ELF.dir/start/IDT.cpp.s"
+	cd /home/hugo/Escritorio/OSvFinal/build/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/hugo/Escritorio/OSvFinal/src/start/IDT.cpp -o CMakeFiles/START.ELF.dir/start/IDT.cpp.s
 
-src/CMakeFiles/START.ELF.dir/start/ND_Keyboard.cpp.o.requires:
-.PHONY : src/CMakeFiles/START.ELF.dir/start/ND_Keyboard.cpp.o.requires
+src/CMakeFiles/START.ELF.dir/start/IDT.cpp.o.requires:
+.PHONY : src/CMakeFiles/START.ELF.dir/start/IDT.cpp.o.requires
 
-src/CMakeFiles/START.ELF.dir/start/ND_Keyboard.cpp.o.provides: src/CMakeFiles/START.ELF.dir/start/ND_Keyboard.cpp.o.requires
-	$(MAKE) -f src/CMakeFiles/START.ELF.dir/build.make src/CMakeFiles/START.ELF.dir/start/ND_Keyboard.cpp.o.provides.build
-.PHONY : src/CMakeFiles/START.ELF.dir/start/ND_Keyboard.cpp.o.provides
+src/CMakeFiles/START.ELF.dir/start/IDT.cpp.o.provides: src/CMakeFiles/START.ELF.dir/start/IDT.cpp.o.requires
+	$(MAKE) -f src/CMakeFiles/START.ELF.dir/build.make src/CMakeFiles/START.ELF.dir/start/IDT.cpp.o.provides.build
+.PHONY : src/CMakeFiles/START.ELF.dir/start/IDT.cpp.o.provides
 
-src/CMakeFiles/START.ELF.dir/start/ND_Keyboard.cpp.o.provides.build: src/CMakeFiles/START.ELF.dir/start/ND_Keyboard.cpp.o
+src/CMakeFiles/START.ELF.dir/start/IDT.cpp.o.provides.build: src/CMakeFiles/START.ELF.dir/start/IDT.cpp.o
 
-src/CMakeFiles/START.ELF.dir/start/ND_String.cpp.o: src/CMakeFiles/START.ELF.dir/flags.make
-src/CMakeFiles/START.ELF.dir/start/ND_String.cpp.o: ../src/start/ND_String.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/hugo/Escritorio/OSv2.0/build/CMakeFiles $(CMAKE_PROGRESS_13)
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object src/CMakeFiles/START.ELF.dir/start/ND_String.cpp.o"
-	cd /home/hugo/Escritorio/OSv2.0/build/src && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/START.ELF.dir/start/ND_String.cpp.o -c /home/hugo/Escritorio/OSv2.0/src/start/ND_String.cpp
+src/CMakeFiles/START.ELF.dir/start/ISR.cpp.o: src/CMakeFiles/START.ELF.dir/flags.make
+src/CMakeFiles/START.ELF.dir/start/ISR.cpp.o: ../src/start/ISR.cpp
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/hugo/Escritorio/OSvFinal/build/CMakeFiles $(CMAKE_PROGRESS_12)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object src/CMakeFiles/START.ELF.dir/start/ISR.cpp.o"
+	cd /home/hugo/Escritorio/OSvFinal/build/src && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/START.ELF.dir/start/ISR.cpp.o -c /home/hugo/Escritorio/OSvFinal/src/start/ISR.cpp
 
-src/CMakeFiles/START.ELF.dir/start/ND_String.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/START.ELF.dir/start/ND_String.cpp.i"
-	cd /home/hugo/Escritorio/OSv2.0/build/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/hugo/Escritorio/OSv2.0/src/start/ND_String.cpp > CMakeFiles/START.ELF.dir/start/ND_String.cpp.i
+src/CMakeFiles/START.ELF.dir/start/ISR.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/START.ELF.dir/start/ISR.cpp.i"
+	cd /home/hugo/Escritorio/OSvFinal/build/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/hugo/Escritorio/OSvFinal/src/start/ISR.cpp > CMakeFiles/START.ELF.dir/start/ISR.cpp.i
 
-src/CMakeFiles/START.ELF.dir/start/ND_String.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/START.ELF.dir/start/ND_String.cpp.s"
-	cd /home/hugo/Escritorio/OSv2.0/build/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/hugo/Escritorio/OSv2.0/src/start/ND_String.cpp -o CMakeFiles/START.ELF.dir/start/ND_String.cpp.s
+src/CMakeFiles/START.ELF.dir/start/ISR.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/START.ELF.dir/start/ISR.cpp.s"
+	cd /home/hugo/Escritorio/OSvFinal/build/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/hugo/Escritorio/OSvFinal/src/start/ISR.cpp -o CMakeFiles/START.ELF.dir/start/ISR.cpp.s
 
-src/CMakeFiles/START.ELF.dir/start/ND_String.cpp.o.requires:
-.PHONY : src/CMakeFiles/START.ELF.dir/start/ND_String.cpp.o.requires
+src/CMakeFiles/START.ELF.dir/start/ISR.cpp.o.requires:
+.PHONY : src/CMakeFiles/START.ELF.dir/start/ISR.cpp.o.requires
 
-src/CMakeFiles/START.ELF.dir/start/ND_String.cpp.o.provides: src/CMakeFiles/START.ELF.dir/start/ND_String.cpp.o.requires
-	$(MAKE) -f src/CMakeFiles/START.ELF.dir/build.make src/CMakeFiles/START.ELF.dir/start/ND_String.cpp.o.provides.build
-.PHONY : src/CMakeFiles/START.ELF.dir/start/ND_String.cpp.o.provides
+src/CMakeFiles/START.ELF.dir/start/ISR.cpp.o.provides: src/CMakeFiles/START.ELF.dir/start/ISR.cpp.o.requires
+	$(MAKE) -f src/CMakeFiles/START.ELF.dir/build.make src/CMakeFiles/START.ELF.dir/start/ISR.cpp.o.provides.build
+.PHONY : src/CMakeFiles/START.ELF.dir/start/ISR.cpp.o.provides
 
-src/CMakeFiles/START.ELF.dir/start/ND_String.cpp.o.provides.build: src/CMakeFiles/START.ELF.dir/start/ND_String.cpp.o
+src/CMakeFiles/START.ELF.dir/start/ISR.cpp.o.provides.build: src/CMakeFiles/START.ELF.dir/start/ISR.cpp.o
 
-src/CMakeFiles/START.ELF.dir/start/ND_Timer.cpp.o: src/CMakeFiles/START.ELF.dir/flags.make
-src/CMakeFiles/START.ELF.dir/start/ND_Timer.cpp.o: ../src/start/ND_Timer.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/hugo/Escritorio/OSv2.0/build/CMakeFiles $(CMAKE_PROGRESS_14)
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object src/CMakeFiles/START.ELF.dir/start/ND_Timer.cpp.o"
-	cd /home/hugo/Escritorio/OSv2.0/build/src && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/START.ELF.dir/start/ND_Timer.cpp.o -c /home/hugo/Escritorio/OSv2.0/src/start/ND_Timer.cpp
+src/CMakeFiles/START.ELF.dir/start/GDT.cpp.o: src/CMakeFiles/START.ELF.dir/flags.make
+src/CMakeFiles/START.ELF.dir/start/GDT.cpp.o: ../src/start/GDT.cpp
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/hugo/Escritorio/OSvFinal/build/CMakeFiles $(CMAKE_PROGRESS_13)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object src/CMakeFiles/START.ELF.dir/start/GDT.cpp.o"
+	cd /home/hugo/Escritorio/OSvFinal/build/src && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/START.ELF.dir/start/GDT.cpp.o -c /home/hugo/Escritorio/OSvFinal/src/start/GDT.cpp
 
-src/CMakeFiles/START.ELF.dir/start/ND_Timer.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/START.ELF.dir/start/ND_Timer.cpp.i"
-	cd /home/hugo/Escritorio/OSv2.0/build/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/hugo/Escritorio/OSv2.0/src/start/ND_Timer.cpp > CMakeFiles/START.ELF.dir/start/ND_Timer.cpp.i
+src/CMakeFiles/START.ELF.dir/start/GDT.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/START.ELF.dir/start/GDT.cpp.i"
+	cd /home/hugo/Escritorio/OSvFinal/build/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/hugo/Escritorio/OSvFinal/src/start/GDT.cpp > CMakeFiles/START.ELF.dir/start/GDT.cpp.i
 
-src/CMakeFiles/START.ELF.dir/start/ND_Timer.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/START.ELF.dir/start/ND_Timer.cpp.s"
-	cd /home/hugo/Escritorio/OSv2.0/build/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/hugo/Escritorio/OSv2.0/src/start/ND_Timer.cpp -o CMakeFiles/START.ELF.dir/start/ND_Timer.cpp.s
+src/CMakeFiles/START.ELF.dir/start/GDT.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/START.ELF.dir/start/GDT.cpp.s"
+	cd /home/hugo/Escritorio/OSvFinal/build/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/hugo/Escritorio/OSvFinal/src/start/GDT.cpp -o CMakeFiles/START.ELF.dir/start/GDT.cpp.s
 
-src/CMakeFiles/START.ELF.dir/start/ND_Timer.cpp.o.requires:
-.PHONY : src/CMakeFiles/START.ELF.dir/start/ND_Timer.cpp.o.requires
+src/CMakeFiles/START.ELF.dir/start/GDT.cpp.o.requires:
+.PHONY : src/CMakeFiles/START.ELF.dir/start/GDT.cpp.o.requires
 
-src/CMakeFiles/START.ELF.dir/start/ND_Timer.cpp.o.provides: src/CMakeFiles/START.ELF.dir/start/ND_Timer.cpp.o.requires
-	$(MAKE) -f src/CMakeFiles/START.ELF.dir/build.make src/CMakeFiles/START.ELF.dir/start/ND_Timer.cpp.o.provides.build
-.PHONY : src/CMakeFiles/START.ELF.dir/start/ND_Timer.cpp.o.provides
+src/CMakeFiles/START.ELF.dir/start/GDT.cpp.o.provides: src/CMakeFiles/START.ELF.dir/start/GDT.cpp.o.requires
+	$(MAKE) -f src/CMakeFiles/START.ELF.dir/build.make src/CMakeFiles/START.ELF.dir/start/GDT.cpp.o.provides.build
+.PHONY : src/CMakeFiles/START.ELF.dir/start/GDT.cpp.o.provides
 
-src/CMakeFiles/START.ELF.dir/start/ND_Timer.cpp.o.provides.build: src/CMakeFiles/START.ELF.dir/start/ND_Timer.cpp.o
+src/CMakeFiles/START.ELF.dir/start/GDT.cpp.o.provides.build: src/CMakeFiles/START.ELF.dir/start/GDT.cpp.o
 
 # Object files for target START.ELF
 START_ELF_OBJECTS = \
+"CMakeFiles/START.ELF.dir/start/sound.asm.o" \
 "CMakeFiles/START.ELF.dir/start/boot.asm.o" \
-"CMakeFiles/START.ELF.dir/start/ND_IDT.cpp.o" \
 "CMakeFiles/START.ELF.dir/start/Terminal.cpp.o" \
-"CMakeFiles/START.ELF.dir/start/ND_Ports.cpp.o" \
-"CMakeFiles/START.ELF.dir/start/ND_Panic.cpp.o" \
-"CMakeFiles/START.ELF.dir/start/ND_IRQ.cpp.o" \
-"CMakeFiles/START.ELF.dir/start/ND_ISR.cpp.o" \
-"CMakeFiles/START.ELF.dir/start/ND_Screen.cpp.o" \
-"CMakeFiles/START.ELF.dir/start/ND_Memory.cpp.o" \
+"CMakeFiles/START.ELF.dir/start/IRQ.cpp.o" \
+"CMakeFiles/START.ELF.dir/start/String.cpp.o" \
+"CMakeFiles/START.ELF.dir/start/Memory.cpp.o" \
+"CMakeFiles/START.ELF.dir/start/Keyboard.cpp.o" \
+"CMakeFiles/START.ELF.dir/start/Ports.cpp.o" \
 "CMakeFiles/START.ELF.dir/start/Kernel.cpp.o" \
-"CMakeFiles/START.ELF.dir/start/ND_GDT.cpp.o" \
-"CMakeFiles/START.ELF.dir/start/ND_Keyboard.cpp.o" \
-"CMakeFiles/START.ELF.dir/start/ND_String.cpp.o" \
-"CMakeFiles/START.ELF.dir/start/ND_Timer.cpp.o"
+"CMakeFiles/START.ELF.dir/start/Screen.cpp.o" \
+"CMakeFiles/START.ELF.dir/start/IDT.cpp.o" \
+"CMakeFiles/START.ELF.dir/start/ISR.cpp.o" \
+"CMakeFiles/START.ELF.dir/start/GDT.cpp.o"
 
 # External object files for target START.ELF
 START_ELF_EXTERNAL_OBJECTS =
 
+src/START.ELF: src/CMakeFiles/START.ELF.dir/start/sound.asm.o
 src/START.ELF: src/CMakeFiles/START.ELF.dir/start/boot.asm.o
-src/START.ELF: src/CMakeFiles/START.ELF.dir/start/ND_IDT.cpp.o
 src/START.ELF: src/CMakeFiles/START.ELF.dir/start/Terminal.cpp.o
-src/START.ELF: src/CMakeFiles/START.ELF.dir/start/ND_Ports.cpp.o
-src/START.ELF: src/CMakeFiles/START.ELF.dir/start/ND_Panic.cpp.o
-src/START.ELF: src/CMakeFiles/START.ELF.dir/start/ND_IRQ.cpp.o
-src/START.ELF: src/CMakeFiles/START.ELF.dir/start/ND_ISR.cpp.o
-src/START.ELF: src/CMakeFiles/START.ELF.dir/start/ND_Screen.cpp.o
-src/START.ELF: src/CMakeFiles/START.ELF.dir/start/ND_Memory.cpp.o
+src/START.ELF: src/CMakeFiles/START.ELF.dir/start/IRQ.cpp.o
+src/START.ELF: src/CMakeFiles/START.ELF.dir/start/String.cpp.o
+src/START.ELF: src/CMakeFiles/START.ELF.dir/start/Memory.cpp.o
+src/START.ELF: src/CMakeFiles/START.ELF.dir/start/Keyboard.cpp.o
+src/START.ELF: src/CMakeFiles/START.ELF.dir/start/Ports.cpp.o
 src/START.ELF: src/CMakeFiles/START.ELF.dir/start/Kernel.cpp.o
-src/START.ELF: src/CMakeFiles/START.ELF.dir/start/ND_GDT.cpp.o
-src/START.ELF: src/CMakeFiles/START.ELF.dir/start/ND_Keyboard.cpp.o
-src/START.ELF: src/CMakeFiles/START.ELF.dir/start/ND_String.cpp.o
-src/START.ELF: src/CMakeFiles/START.ELF.dir/start/ND_Timer.cpp.o
+src/START.ELF: src/CMakeFiles/START.ELF.dir/start/Screen.cpp.o
+src/START.ELF: src/CMakeFiles/START.ELF.dir/start/IDT.cpp.o
+src/START.ELF: src/CMakeFiles/START.ELF.dir/start/ISR.cpp.o
+src/START.ELF: src/CMakeFiles/START.ELF.dir/start/GDT.cpp.o
 src/START.ELF: src/CMakeFiles/START.ELF.dir/build.make
 src/START.ELF: src/CMakeFiles/START.ELF.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --red --bold "Linking CXX executable START.ELF"
-	cd /home/hugo/Escritorio/OSv2.0/build/src && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/START.ELF.dir/link.txt --verbose=$(VERBOSE)
+	cd /home/hugo/Escritorio/OSvFinal/build/src && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/START.ELF.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
 src/CMakeFiles/START.ELF.dir/build: src/START.ELF
 .PHONY : src/CMakeFiles/START.ELF.dir/build
 
+src/CMakeFiles/START.ELF.dir/requires: src/CMakeFiles/START.ELF.dir/start/sound.asm.o.requires
 src/CMakeFiles/START.ELF.dir/requires: src/CMakeFiles/START.ELF.dir/start/boot.asm.o.requires
-src/CMakeFiles/START.ELF.dir/requires: src/CMakeFiles/START.ELF.dir/start/ND_IDT.cpp.o.requires
 src/CMakeFiles/START.ELF.dir/requires: src/CMakeFiles/START.ELF.dir/start/Terminal.cpp.o.requires
-src/CMakeFiles/START.ELF.dir/requires: src/CMakeFiles/START.ELF.dir/start/ND_Ports.cpp.o.requires
-src/CMakeFiles/START.ELF.dir/requires: src/CMakeFiles/START.ELF.dir/start/ND_Panic.cpp.o.requires
-src/CMakeFiles/START.ELF.dir/requires: src/CMakeFiles/START.ELF.dir/start/ND_IRQ.cpp.o.requires
-src/CMakeFiles/START.ELF.dir/requires: src/CMakeFiles/START.ELF.dir/start/ND_ISR.cpp.o.requires
-src/CMakeFiles/START.ELF.dir/requires: src/CMakeFiles/START.ELF.dir/start/ND_Screen.cpp.o.requires
-src/CMakeFiles/START.ELF.dir/requires: src/CMakeFiles/START.ELF.dir/start/ND_Memory.cpp.o.requires
+src/CMakeFiles/START.ELF.dir/requires: src/CMakeFiles/START.ELF.dir/start/IRQ.cpp.o.requires
+src/CMakeFiles/START.ELF.dir/requires: src/CMakeFiles/START.ELF.dir/start/String.cpp.o.requires
+src/CMakeFiles/START.ELF.dir/requires: src/CMakeFiles/START.ELF.dir/start/Memory.cpp.o.requires
+src/CMakeFiles/START.ELF.dir/requires: src/CMakeFiles/START.ELF.dir/start/Keyboard.cpp.o.requires
+src/CMakeFiles/START.ELF.dir/requires: src/CMakeFiles/START.ELF.dir/start/Ports.cpp.o.requires
 src/CMakeFiles/START.ELF.dir/requires: src/CMakeFiles/START.ELF.dir/start/Kernel.cpp.o.requires
-src/CMakeFiles/START.ELF.dir/requires: src/CMakeFiles/START.ELF.dir/start/ND_GDT.cpp.o.requires
-src/CMakeFiles/START.ELF.dir/requires: src/CMakeFiles/START.ELF.dir/start/ND_Keyboard.cpp.o.requires
-src/CMakeFiles/START.ELF.dir/requires: src/CMakeFiles/START.ELF.dir/start/ND_String.cpp.o.requires
-src/CMakeFiles/START.ELF.dir/requires: src/CMakeFiles/START.ELF.dir/start/ND_Timer.cpp.o.requires
+src/CMakeFiles/START.ELF.dir/requires: src/CMakeFiles/START.ELF.dir/start/Screen.cpp.o.requires
+src/CMakeFiles/START.ELF.dir/requires: src/CMakeFiles/START.ELF.dir/start/IDT.cpp.o.requires
+src/CMakeFiles/START.ELF.dir/requires: src/CMakeFiles/START.ELF.dir/start/ISR.cpp.o.requires
+src/CMakeFiles/START.ELF.dir/requires: src/CMakeFiles/START.ELF.dir/start/GDT.cpp.o.requires
 .PHONY : src/CMakeFiles/START.ELF.dir/requires
 
 src/CMakeFiles/START.ELF.dir/clean:
-	cd /home/hugo/Escritorio/OSv2.0/build/src && $(CMAKE_COMMAND) -P CMakeFiles/START.ELF.dir/cmake_clean.cmake
+	cd /home/hugo/Escritorio/OSvFinal/build/src && $(CMAKE_COMMAND) -P CMakeFiles/START.ELF.dir/cmake_clean.cmake
 .PHONY : src/CMakeFiles/START.ELF.dir/clean
 
 src/CMakeFiles/START.ELF.dir/depend:
-	cd /home/hugo/Escritorio/OSv2.0/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/hugo/Escritorio/OSv2.0 /home/hugo/Escritorio/OSv2.0/src /home/hugo/Escritorio/OSv2.0/build /home/hugo/Escritorio/OSv2.0/build/src /home/hugo/Escritorio/OSv2.0/build/src/CMakeFiles/START.ELF.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/hugo/Escritorio/OSvFinal/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/hugo/Escritorio/OSvFinal /home/hugo/Escritorio/OSvFinal/src /home/hugo/Escritorio/OSvFinal/build /home/hugo/Escritorio/OSvFinal/build/src /home/hugo/Escritorio/OSvFinal/build/src/CMakeFiles/START.ELF.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : src/CMakeFiles/START.ELF.dir/depend
 

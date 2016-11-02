@@ -1,4 +1,4 @@
-# Install script for directory: /home/hugo/Escritorio/OSv2.0/src
+# Install script for directory: /home/hugo/Escritorio/OSvFinal/src
 
 # Set the install prefix
 IF(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -39,7 +39,7 @@ IF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspeci
          FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/next/START.ELF"
          RPATH "")
   ENDIF()
-  FILE(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/next" TYPE EXECUTABLE FILES "/home/hugo/Escritorio/OSv2.0/build/src/START.ELF")
+  FILE(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/next" TYPE EXECUTABLE FILES "/home/hugo/Escritorio/OSvFinal/build/src/START.ELF")
   IF(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/next/START.ELF" AND
      NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/next/START.ELF")
     IF(CMAKE_INSTALL_DO_STRIP)

@@ -39,10 +39,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/hugo/Escritorio/OSv2.0
+CMAKE_SOURCE_DIR = /home/hugo/Escritorio/OSvFinal
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/hugo/Escritorio/OSv2.0/build
+CMAKE_BINARY_DIR = /home/hugo/Escritorio/OSvFinal/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -110,14 +110,14 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	cd /home/hugo/Escritorio/OSv2.0/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/hugo/Escritorio/OSv2.0/build/CMakeFiles /home/hugo/Escritorio/OSv2.0/build/src/CMakeFiles/progress.marks
-	cd /home/hugo/Escritorio/OSv2.0/build && $(MAKE) -f CMakeFiles/Makefile2 src/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/hugo/Escritorio/OSv2.0/build/CMakeFiles 0
+	cd /home/hugo/Escritorio/OSvFinal/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/hugo/Escritorio/OSvFinal/build/CMakeFiles /home/hugo/Escritorio/OSvFinal/build/src/CMakeFiles/progress.marks
+	cd /home/hugo/Escritorio/OSvFinal/build && $(MAKE) -f CMakeFiles/Makefile2 src/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/hugo/Escritorio/OSvFinal/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /home/hugo/Escritorio/OSv2.0/build && $(MAKE) -f CMakeFiles/Makefile2 src/clean
+	cd /home/hugo/Escritorio/OSvFinal/build && $(MAKE) -f CMakeFiles/Makefile2 src/clean
 .PHONY : clean
 
 # The main clean target
@@ -126,22 +126,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /home/hugo/Escritorio/OSv2.0/build && $(MAKE) -f CMakeFiles/Makefile2 src/preinstall
+	cd /home/hugo/Escritorio/OSvFinal/build && $(MAKE) -f CMakeFiles/Makefile2 src/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /home/hugo/Escritorio/OSv2.0/build && $(MAKE) -f CMakeFiles/Makefile2 src/preinstall
+	cd /home/hugo/Escritorio/OSvFinal/build && $(MAKE) -f CMakeFiles/Makefile2 src/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /home/hugo/Escritorio/OSv2.0/build && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /home/hugo/Escritorio/OSvFinal/build && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 src/CMakeFiles/START.ELF.dir/rule:
-	cd /home/hugo/Escritorio/OSv2.0/build && $(MAKE) -f CMakeFiles/Makefile2 src/CMakeFiles/START.ELF.dir/rule
+	cd /home/hugo/Escritorio/OSvFinal/build && $(MAKE) -f CMakeFiles/Makefile2 src/CMakeFiles/START.ELF.dir/rule
 .PHONY : src/CMakeFiles/START.ELF.dir/rule
 
 # Convenience name for target.
@@ -150,15 +150,111 @@ START.ELF: src/CMakeFiles/START.ELF.dir/rule
 
 # fast build rule for target.
 START.ELF/fast:
-	cd /home/hugo/Escritorio/OSv2.0/build && $(MAKE) -f src/CMakeFiles/START.ELF.dir/build.make src/CMakeFiles/START.ELF.dir/build
+	cd /home/hugo/Escritorio/OSvFinal/build && $(MAKE) -f src/CMakeFiles/START.ELF.dir/build.make src/CMakeFiles/START.ELF.dir/build
 .PHONY : START.ELF/fast
+
+start/GDT.o: start/GDT.cpp.o
+.PHONY : start/GDT.o
+
+# target to build an object file
+start/GDT.cpp.o:
+	cd /home/hugo/Escritorio/OSvFinal/build && $(MAKE) -f src/CMakeFiles/START.ELF.dir/build.make src/CMakeFiles/START.ELF.dir/start/GDT.cpp.o
+.PHONY : start/GDT.cpp.o
+
+start/GDT.i: start/GDT.cpp.i
+.PHONY : start/GDT.i
+
+# target to preprocess a source file
+start/GDT.cpp.i:
+	cd /home/hugo/Escritorio/OSvFinal/build && $(MAKE) -f src/CMakeFiles/START.ELF.dir/build.make src/CMakeFiles/START.ELF.dir/start/GDT.cpp.i
+.PHONY : start/GDT.cpp.i
+
+start/GDT.s: start/GDT.cpp.s
+.PHONY : start/GDT.s
+
+# target to generate assembly for a file
+start/GDT.cpp.s:
+	cd /home/hugo/Escritorio/OSvFinal/build && $(MAKE) -f src/CMakeFiles/START.ELF.dir/build.make src/CMakeFiles/START.ELF.dir/start/GDT.cpp.s
+.PHONY : start/GDT.cpp.s
+
+start/IDT.o: start/IDT.cpp.o
+.PHONY : start/IDT.o
+
+# target to build an object file
+start/IDT.cpp.o:
+	cd /home/hugo/Escritorio/OSvFinal/build && $(MAKE) -f src/CMakeFiles/START.ELF.dir/build.make src/CMakeFiles/START.ELF.dir/start/IDT.cpp.o
+.PHONY : start/IDT.cpp.o
+
+start/IDT.i: start/IDT.cpp.i
+.PHONY : start/IDT.i
+
+# target to preprocess a source file
+start/IDT.cpp.i:
+	cd /home/hugo/Escritorio/OSvFinal/build && $(MAKE) -f src/CMakeFiles/START.ELF.dir/build.make src/CMakeFiles/START.ELF.dir/start/IDT.cpp.i
+.PHONY : start/IDT.cpp.i
+
+start/IDT.s: start/IDT.cpp.s
+.PHONY : start/IDT.s
+
+# target to generate assembly for a file
+start/IDT.cpp.s:
+	cd /home/hugo/Escritorio/OSvFinal/build && $(MAKE) -f src/CMakeFiles/START.ELF.dir/build.make src/CMakeFiles/START.ELF.dir/start/IDT.cpp.s
+.PHONY : start/IDT.cpp.s
+
+start/IRQ.o: start/IRQ.cpp.o
+.PHONY : start/IRQ.o
+
+# target to build an object file
+start/IRQ.cpp.o:
+	cd /home/hugo/Escritorio/OSvFinal/build && $(MAKE) -f src/CMakeFiles/START.ELF.dir/build.make src/CMakeFiles/START.ELF.dir/start/IRQ.cpp.o
+.PHONY : start/IRQ.cpp.o
+
+start/IRQ.i: start/IRQ.cpp.i
+.PHONY : start/IRQ.i
+
+# target to preprocess a source file
+start/IRQ.cpp.i:
+	cd /home/hugo/Escritorio/OSvFinal/build && $(MAKE) -f src/CMakeFiles/START.ELF.dir/build.make src/CMakeFiles/START.ELF.dir/start/IRQ.cpp.i
+.PHONY : start/IRQ.cpp.i
+
+start/IRQ.s: start/IRQ.cpp.s
+.PHONY : start/IRQ.s
+
+# target to generate assembly for a file
+start/IRQ.cpp.s:
+	cd /home/hugo/Escritorio/OSvFinal/build && $(MAKE) -f src/CMakeFiles/START.ELF.dir/build.make src/CMakeFiles/START.ELF.dir/start/IRQ.cpp.s
+.PHONY : start/IRQ.cpp.s
+
+start/ISR.o: start/ISR.cpp.o
+.PHONY : start/ISR.o
+
+# target to build an object file
+start/ISR.cpp.o:
+	cd /home/hugo/Escritorio/OSvFinal/build && $(MAKE) -f src/CMakeFiles/START.ELF.dir/build.make src/CMakeFiles/START.ELF.dir/start/ISR.cpp.o
+.PHONY : start/ISR.cpp.o
+
+start/ISR.i: start/ISR.cpp.i
+.PHONY : start/ISR.i
+
+# target to preprocess a source file
+start/ISR.cpp.i:
+	cd /home/hugo/Escritorio/OSvFinal/build && $(MAKE) -f src/CMakeFiles/START.ELF.dir/build.make src/CMakeFiles/START.ELF.dir/start/ISR.cpp.i
+.PHONY : start/ISR.cpp.i
+
+start/ISR.s: start/ISR.cpp.s
+.PHONY : start/ISR.s
+
+# target to generate assembly for a file
+start/ISR.cpp.s:
+	cd /home/hugo/Escritorio/OSvFinal/build && $(MAKE) -f src/CMakeFiles/START.ELF.dir/build.make src/CMakeFiles/START.ELF.dir/start/ISR.cpp.s
+.PHONY : start/ISR.cpp.s
 
 start/Kernel.o: start/Kernel.cpp.o
 .PHONY : start/Kernel.o
 
 # target to build an object file
 start/Kernel.cpp.o:
-	cd /home/hugo/Escritorio/OSv2.0/build && $(MAKE) -f src/CMakeFiles/START.ELF.dir/build.make src/CMakeFiles/START.ELF.dir/start/Kernel.cpp.o
+	cd /home/hugo/Escritorio/OSvFinal/build && $(MAKE) -f src/CMakeFiles/START.ELF.dir/build.make src/CMakeFiles/START.ELF.dir/start/Kernel.cpp.o
 .PHONY : start/Kernel.cpp.o
 
 start/Kernel.i: start/Kernel.cpp.i
@@ -166,7 +262,7 @@ start/Kernel.i: start/Kernel.cpp.i
 
 # target to preprocess a source file
 start/Kernel.cpp.i:
-	cd /home/hugo/Escritorio/OSv2.0/build && $(MAKE) -f src/CMakeFiles/START.ELF.dir/build.make src/CMakeFiles/START.ELF.dir/start/Kernel.cpp.i
+	cd /home/hugo/Escritorio/OSvFinal/build && $(MAKE) -f src/CMakeFiles/START.ELF.dir/build.make src/CMakeFiles/START.ELF.dir/start/Kernel.cpp.i
 .PHONY : start/Kernel.cpp.i
 
 start/Kernel.s: start/Kernel.cpp.s
@@ -174,279 +270,135 @@ start/Kernel.s: start/Kernel.cpp.s
 
 # target to generate assembly for a file
 start/Kernel.cpp.s:
-	cd /home/hugo/Escritorio/OSv2.0/build && $(MAKE) -f src/CMakeFiles/START.ELF.dir/build.make src/CMakeFiles/START.ELF.dir/start/Kernel.cpp.s
+	cd /home/hugo/Escritorio/OSvFinal/build && $(MAKE) -f src/CMakeFiles/START.ELF.dir/build.make src/CMakeFiles/START.ELF.dir/start/Kernel.cpp.s
 .PHONY : start/Kernel.cpp.s
 
-start/ND_GDT.o: start/ND_GDT.cpp.o
-.PHONY : start/ND_GDT.o
+start/Keyboard.o: start/Keyboard.cpp.o
+.PHONY : start/Keyboard.o
 
 # target to build an object file
-start/ND_GDT.cpp.o:
-	cd /home/hugo/Escritorio/OSv2.0/build && $(MAKE) -f src/CMakeFiles/START.ELF.dir/build.make src/CMakeFiles/START.ELF.dir/start/ND_GDT.cpp.o
-.PHONY : start/ND_GDT.cpp.o
+start/Keyboard.cpp.o:
+	cd /home/hugo/Escritorio/OSvFinal/build && $(MAKE) -f src/CMakeFiles/START.ELF.dir/build.make src/CMakeFiles/START.ELF.dir/start/Keyboard.cpp.o
+.PHONY : start/Keyboard.cpp.o
 
-start/ND_GDT.i: start/ND_GDT.cpp.i
-.PHONY : start/ND_GDT.i
+start/Keyboard.i: start/Keyboard.cpp.i
+.PHONY : start/Keyboard.i
 
 # target to preprocess a source file
-start/ND_GDT.cpp.i:
-	cd /home/hugo/Escritorio/OSv2.0/build && $(MAKE) -f src/CMakeFiles/START.ELF.dir/build.make src/CMakeFiles/START.ELF.dir/start/ND_GDT.cpp.i
-.PHONY : start/ND_GDT.cpp.i
+start/Keyboard.cpp.i:
+	cd /home/hugo/Escritorio/OSvFinal/build && $(MAKE) -f src/CMakeFiles/START.ELF.dir/build.make src/CMakeFiles/START.ELF.dir/start/Keyboard.cpp.i
+.PHONY : start/Keyboard.cpp.i
 
-start/ND_GDT.s: start/ND_GDT.cpp.s
-.PHONY : start/ND_GDT.s
+start/Keyboard.s: start/Keyboard.cpp.s
+.PHONY : start/Keyboard.s
 
 # target to generate assembly for a file
-start/ND_GDT.cpp.s:
-	cd /home/hugo/Escritorio/OSv2.0/build && $(MAKE) -f src/CMakeFiles/START.ELF.dir/build.make src/CMakeFiles/START.ELF.dir/start/ND_GDT.cpp.s
-.PHONY : start/ND_GDT.cpp.s
+start/Keyboard.cpp.s:
+	cd /home/hugo/Escritorio/OSvFinal/build && $(MAKE) -f src/CMakeFiles/START.ELF.dir/build.make src/CMakeFiles/START.ELF.dir/start/Keyboard.cpp.s
+.PHONY : start/Keyboard.cpp.s
 
-start/ND_IDT.o: start/ND_IDT.cpp.o
-.PHONY : start/ND_IDT.o
+start/Memory.o: start/Memory.cpp.o
+.PHONY : start/Memory.o
 
 # target to build an object file
-start/ND_IDT.cpp.o:
-	cd /home/hugo/Escritorio/OSv2.0/build && $(MAKE) -f src/CMakeFiles/START.ELF.dir/build.make src/CMakeFiles/START.ELF.dir/start/ND_IDT.cpp.o
-.PHONY : start/ND_IDT.cpp.o
+start/Memory.cpp.o:
+	cd /home/hugo/Escritorio/OSvFinal/build && $(MAKE) -f src/CMakeFiles/START.ELF.dir/build.make src/CMakeFiles/START.ELF.dir/start/Memory.cpp.o
+.PHONY : start/Memory.cpp.o
 
-start/ND_IDT.i: start/ND_IDT.cpp.i
-.PHONY : start/ND_IDT.i
+start/Memory.i: start/Memory.cpp.i
+.PHONY : start/Memory.i
 
 # target to preprocess a source file
-start/ND_IDT.cpp.i:
-	cd /home/hugo/Escritorio/OSv2.0/build && $(MAKE) -f src/CMakeFiles/START.ELF.dir/build.make src/CMakeFiles/START.ELF.dir/start/ND_IDT.cpp.i
-.PHONY : start/ND_IDT.cpp.i
+start/Memory.cpp.i:
+	cd /home/hugo/Escritorio/OSvFinal/build && $(MAKE) -f src/CMakeFiles/START.ELF.dir/build.make src/CMakeFiles/START.ELF.dir/start/Memory.cpp.i
+.PHONY : start/Memory.cpp.i
 
-start/ND_IDT.s: start/ND_IDT.cpp.s
-.PHONY : start/ND_IDT.s
+start/Memory.s: start/Memory.cpp.s
+.PHONY : start/Memory.s
 
 # target to generate assembly for a file
-start/ND_IDT.cpp.s:
-	cd /home/hugo/Escritorio/OSv2.0/build && $(MAKE) -f src/CMakeFiles/START.ELF.dir/build.make src/CMakeFiles/START.ELF.dir/start/ND_IDT.cpp.s
-.PHONY : start/ND_IDT.cpp.s
+start/Memory.cpp.s:
+	cd /home/hugo/Escritorio/OSvFinal/build && $(MAKE) -f src/CMakeFiles/START.ELF.dir/build.make src/CMakeFiles/START.ELF.dir/start/Memory.cpp.s
+.PHONY : start/Memory.cpp.s
 
-start/ND_IRQ.o: start/ND_IRQ.cpp.o
-.PHONY : start/ND_IRQ.o
+start/Ports.o: start/Ports.cpp.o
+.PHONY : start/Ports.o
 
 # target to build an object file
-start/ND_IRQ.cpp.o:
-	cd /home/hugo/Escritorio/OSv2.0/build && $(MAKE) -f src/CMakeFiles/START.ELF.dir/build.make src/CMakeFiles/START.ELF.dir/start/ND_IRQ.cpp.o
-.PHONY : start/ND_IRQ.cpp.o
+start/Ports.cpp.o:
+	cd /home/hugo/Escritorio/OSvFinal/build && $(MAKE) -f src/CMakeFiles/START.ELF.dir/build.make src/CMakeFiles/START.ELF.dir/start/Ports.cpp.o
+.PHONY : start/Ports.cpp.o
 
-start/ND_IRQ.i: start/ND_IRQ.cpp.i
-.PHONY : start/ND_IRQ.i
+start/Ports.i: start/Ports.cpp.i
+.PHONY : start/Ports.i
 
 # target to preprocess a source file
-start/ND_IRQ.cpp.i:
-	cd /home/hugo/Escritorio/OSv2.0/build && $(MAKE) -f src/CMakeFiles/START.ELF.dir/build.make src/CMakeFiles/START.ELF.dir/start/ND_IRQ.cpp.i
-.PHONY : start/ND_IRQ.cpp.i
+start/Ports.cpp.i:
+	cd /home/hugo/Escritorio/OSvFinal/build && $(MAKE) -f src/CMakeFiles/START.ELF.dir/build.make src/CMakeFiles/START.ELF.dir/start/Ports.cpp.i
+.PHONY : start/Ports.cpp.i
 
-start/ND_IRQ.s: start/ND_IRQ.cpp.s
-.PHONY : start/ND_IRQ.s
+start/Ports.s: start/Ports.cpp.s
+.PHONY : start/Ports.s
 
 # target to generate assembly for a file
-start/ND_IRQ.cpp.s:
-	cd /home/hugo/Escritorio/OSv2.0/build && $(MAKE) -f src/CMakeFiles/START.ELF.dir/build.make src/CMakeFiles/START.ELF.dir/start/ND_IRQ.cpp.s
-.PHONY : start/ND_IRQ.cpp.s
+start/Ports.cpp.s:
+	cd /home/hugo/Escritorio/OSvFinal/build && $(MAKE) -f src/CMakeFiles/START.ELF.dir/build.make src/CMakeFiles/START.ELF.dir/start/Ports.cpp.s
+.PHONY : start/Ports.cpp.s
 
-start/ND_ISR.o: start/ND_ISR.cpp.o
-.PHONY : start/ND_ISR.o
+start/Screen.o: start/Screen.cpp.o
+.PHONY : start/Screen.o
 
 # target to build an object file
-start/ND_ISR.cpp.o:
-	cd /home/hugo/Escritorio/OSv2.0/build && $(MAKE) -f src/CMakeFiles/START.ELF.dir/build.make src/CMakeFiles/START.ELF.dir/start/ND_ISR.cpp.o
-.PHONY : start/ND_ISR.cpp.o
+start/Screen.cpp.o:
+	cd /home/hugo/Escritorio/OSvFinal/build && $(MAKE) -f src/CMakeFiles/START.ELF.dir/build.make src/CMakeFiles/START.ELF.dir/start/Screen.cpp.o
+.PHONY : start/Screen.cpp.o
 
-start/ND_ISR.i: start/ND_ISR.cpp.i
-.PHONY : start/ND_ISR.i
+start/Screen.i: start/Screen.cpp.i
+.PHONY : start/Screen.i
 
 # target to preprocess a source file
-start/ND_ISR.cpp.i:
-	cd /home/hugo/Escritorio/OSv2.0/build && $(MAKE) -f src/CMakeFiles/START.ELF.dir/build.make src/CMakeFiles/START.ELF.dir/start/ND_ISR.cpp.i
-.PHONY : start/ND_ISR.cpp.i
+start/Screen.cpp.i:
+	cd /home/hugo/Escritorio/OSvFinal/build && $(MAKE) -f src/CMakeFiles/START.ELF.dir/build.make src/CMakeFiles/START.ELF.dir/start/Screen.cpp.i
+.PHONY : start/Screen.cpp.i
 
-start/ND_ISR.s: start/ND_ISR.cpp.s
-.PHONY : start/ND_ISR.s
+start/Screen.s: start/Screen.cpp.s
+.PHONY : start/Screen.s
 
 # target to generate assembly for a file
-start/ND_ISR.cpp.s:
-	cd /home/hugo/Escritorio/OSv2.0/build && $(MAKE) -f src/CMakeFiles/START.ELF.dir/build.make src/CMakeFiles/START.ELF.dir/start/ND_ISR.cpp.s
-.PHONY : start/ND_ISR.cpp.s
+start/Screen.cpp.s:
+	cd /home/hugo/Escritorio/OSvFinal/build && $(MAKE) -f src/CMakeFiles/START.ELF.dir/build.make src/CMakeFiles/START.ELF.dir/start/Screen.cpp.s
+.PHONY : start/Screen.cpp.s
 
-start/ND_Keyboard.o: start/ND_Keyboard.cpp.o
-.PHONY : start/ND_Keyboard.o
+start/String.o: start/String.cpp.o
+.PHONY : start/String.o
 
 # target to build an object file
-start/ND_Keyboard.cpp.o:
-	cd /home/hugo/Escritorio/OSv2.0/build && $(MAKE) -f src/CMakeFiles/START.ELF.dir/build.make src/CMakeFiles/START.ELF.dir/start/ND_Keyboard.cpp.o
-.PHONY : start/ND_Keyboard.cpp.o
+start/String.cpp.o:
+	cd /home/hugo/Escritorio/OSvFinal/build && $(MAKE) -f src/CMakeFiles/START.ELF.dir/build.make src/CMakeFiles/START.ELF.dir/start/String.cpp.o
+.PHONY : start/String.cpp.o
 
-start/ND_Keyboard.i: start/ND_Keyboard.cpp.i
-.PHONY : start/ND_Keyboard.i
-
-# target to preprocess a source file
-start/ND_Keyboard.cpp.i:
-	cd /home/hugo/Escritorio/OSv2.0/build && $(MAKE) -f src/CMakeFiles/START.ELF.dir/build.make src/CMakeFiles/START.ELF.dir/start/ND_Keyboard.cpp.i
-.PHONY : start/ND_Keyboard.cpp.i
-
-start/ND_Keyboard.s: start/ND_Keyboard.cpp.s
-.PHONY : start/ND_Keyboard.s
-
-# target to generate assembly for a file
-start/ND_Keyboard.cpp.s:
-	cd /home/hugo/Escritorio/OSv2.0/build && $(MAKE) -f src/CMakeFiles/START.ELF.dir/build.make src/CMakeFiles/START.ELF.dir/start/ND_Keyboard.cpp.s
-.PHONY : start/ND_Keyboard.cpp.s
-
-start/ND_Memory.o: start/ND_Memory.cpp.o
-.PHONY : start/ND_Memory.o
-
-# target to build an object file
-start/ND_Memory.cpp.o:
-	cd /home/hugo/Escritorio/OSv2.0/build && $(MAKE) -f src/CMakeFiles/START.ELF.dir/build.make src/CMakeFiles/START.ELF.dir/start/ND_Memory.cpp.o
-.PHONY : start/ND_Memory.cpp.o
-
-start/ND_Memory.i: start/ND_Memory.cpp.i
-.PHONY : start/ND_Memory.i
+start/String.i: start/String.cpp.i
+.PHONY : start/String.i
 
 # target to preprocess a source file
-start/ND_Memory.cpp.i:
-	cd /home/hugo/Escritorio/OSv2.0/build && $(MAKE) -f src/CMakeFiles/START.ELF.dir/build.make src/CMakeFiles/START.ELF.dir/start/ND_Memory.cpp.i
-.PHONY : start/ND_Memory.cpp.i
+start/String.cpp.i:
+	cd /home/hugo/Escritorio/OSvFinal/build && $(MAKE) -f src/CMakeFiles/START.ELF.dir/build.make src/CMakeFiles/START.ELF.dir/start/String.cpp.i
+.PHONY : start/String.cpp.i
 
-start/ND_Memory.s: start/ND_Memory.cpp.s
-.PHONY : start/ND_Memory.s
-
-# target to generate assembly for a file
-start/ND_Memory.cpp.s:
-	cd /home/hugo/Escritorio/OSv2.0/build && $(MAKE) -f src/CMakeFiles/START.ELF.dir/build.make src/CMakeFiles/START.ELF.dir/start/ND_Memory.cpp.s
-.PHONY : start/ND_Memory.cpp.s
-
-start/ND_Panic.o: start/ND_Panic.cpp.o
-.PHONY : start/ND_Panic.o
-
-# target to build an object file
-start/ND_Panic.cpp.o:
-	cd /home/hugo/Escritorio/OSv2.0/build && $(MAKE) -f src/CMakeFiles/START.ELF.dir/build.make src/CMakeFiles/START.ELF.dir/start/ND_Panic.cpp.o
-.PHONY : start/ND_Panic.cpp.o
-
-start/ND_Panic.i: start/ND_Panic.cpp.i
-.PHONY : start/ND_Panic.i
-
-# target to preprocess a source file
-start/ND_Panic.cpp.i:
-	cd /home/hugo/Escritorio/OSv2.0/build && $(MAKE) -f src/CMakeFiles/START.ELF.dir/build.make src/CMakeFiles/START.ELF.dir/start/ND_Panic.cpp.i
-.PHONY : start/ND_Panic.cpp.i
-
-start/ND_Panic.s: start/ND_Panic.cpp.s
-.PHONY : start/ND_Panic.s
+start/String.s: start/String.cpp.s
+.PHONY : start/String.s
 
 # target to generate assembly for a file
-start/ND_Panic.cpp.s:
-	cd /home/hugo/Escritorio/OSv2.0/build && $(MAKE) -f src/CMakeFiles/START.ELF.dir/build.make src/CMakeFiles/START.ELF.dir/start/ND_Panic.cpp.s
-.PHONY : start/ND_Panic.cpp.s
-
-start/ND_Ports.o: start/ND_Ports.cpp.o
-.PHONY : start/ND_Ports.o
-
-# target to build an object file
-start/ND_Ports.cpp.o:
-	cd /home/hugo/Escritorio/OSv2.0/build && $(MAKE) -f src/CMakeFiles/START.ELF.dir/build.make src/CMakeFiles/START.ELF.dir/start/ND_Ports.cpp.o
-.PHONY : start/ND_Ports.cpp.o
-
-start/ND_Ports.i: start/ND_Ports.cpp.i
-.PHONY : start/ND_Ports.i
-
-# target to preprocess a source file
-start/ND_Ports.cpp.i:
-	cd /home/hugo/Escritorio/OSv2.0/build && $(MAKE) -f src/CMakeFiles/START.ELF.dir/build.make src/CMakeFiles/START.ELF.dir/start/ND_Ports.cpp.i
-.PHONY : start/ND_Ports.cpp.i
-
-start/ND_Ports.s: start/ND_Ports.cpp.s
-.PHONY : start/ND_Ports.s
-
-# target to generate assembly for a file
-start/ND_Ports.cpp.s:
-	cd /home/hugo/Escritorio/OSv2.0/build && $(MAKE) -f src/CMakeFiles/START.ELF.dir/build.make src/CMakeFiles/START.ELF.dir/start/ND_Ports.cpp.s
-.PHONY : start/ND_Ports.cpp.s
-
-start/ND_Screen.o: start/ND_Screen.cpp.o
-.PHONY : start/ND_Screen.o
-
-# target to build an object file
-start/ND_Screen.cpp.o:
-	cd /home/hugo/Escritorio/OSv2.0/build && $(MAKE) -f src/CMakeFiles/START.ELF.dir/build.make src/CMakeFiles/START.ELF.dir/start/ND_Screen.cpp.o
-.PHONY : start/ND_Screen.cpp.o
-
-start/ND_Screen.i: start/ND_Screen.cpp.i
-.PHONY : start/ND_Screen.i
-
-# target to preprocess a source file
-start/ND_Screen.cpp.i:
-	cd /home/hugo/Escritorio/OSv2.0/build && $(MAKE) -f src/CMakeFiles/START.ELF.dir/build.make src/CMakeFiles/START.ELF.dir/start/ND_Screen.cpp.i
-.PHONY : start/ND_Screen.cpp.i
-
-start/ND_Screen.s: start/ND_Screen.cpp.s
-.PHONY : start/ND_Screen.s
-
-# target to generate assembly for a file
-start/ND_Screen.cpp.s:
-	cd /home/hugo/Escritorio/OSv2.0/build && $(MAKE) -f src/CMakeFiles/START.ELF.dir/build.make src/CMakeFiles/START.ELF.dir/start/ND_Screen.cpp.s
-.PHONY : start/ND_Screen.cpp.s
-
-start/ND_String.o: start/ND_String.cpp.o
-.PHONY : start/ND_String.o
-
-# target to build an object file
-start/ND_String.cpp.o:
-	cd /home/hugo/Escritorio/OSv2.0/build && $(MAKE) -f src/CMakeFiles/START.ELF.dir/build.make src/CMakeFiles/START.ELF.dir/start/ND_String.cpp.o
-.PHONY : start/ND_String.cpp.o
-
-start/ND_String.i: start/ND_String.cpp.i
-.PHONY : start/ND_String.i
-
-# target to preprocess a source file
-start/ND_String.cpp.i:
-	cd /home/hugo/Escritorio/OSv2.0/build && $(MAKE) -f src/CMakeFiles/START.ELF.dir/build.make src/CMakeFiles/START.ELF.dir/start/ND_String.cpp.i
-.PHONY : start/ND_String.cpp.i
-
-start/ND_String.s: start/ND_String.cpp.s
-.PHONY : start/ND_String.s
-
-# target to generate assembly for a file
-start/ND_String.cpp.s:
-	cd /home/hugo/Escritorio/OSv2.0/build && $(MAKE) -f src/CMakeFiles/START.ELF.dir/build.make src/CMakeFiles/START.ELF.dir/start/ND_String.cpp.s
-.PHONY : start/ND_String.cpp.s
-
-start/ND_Timer.o: start/ND_Timer.cpp.o
-.PHONY : start/ND_Timer.o
-
-# target to build an object file
-start/ND_Timer.cpp.o:
-	cd /home/hugo/Escritorio/OSv2.0/build && $(MAKE) -f src/CMakeFiles/START.ELF.dir/build.make src/CMakeFiles/START.ELF.dir/start/ND_Timer.cpp.o
-.PHONY : start/ND_Timer.cpp.o
-
-start/ND_Timer.i: start/ND_Timer.cpp.i
-.PHONY : start/ND_Timer.i
-
-# target to preprocess a source file
-start/ND_Timer.cpp.i:
-	cd /home/hugo/Escritorio/OSv2.0/build && $(MAKE) -f src/CMakeFiles/START.ELF.dir/build.make src/CMakeFiles/START.ELF.dir/start/ND_Timer.cpp.i
-.PHONY : start/ND_Timer.cpp.i
-
-start/ND_Timer.s: start/ND_Timer.cpp.s
-.PHONY : start/ND_Timer.s
-
-# target to generate assembly for a file
-start/ND_Timer.cpp.s:
-	cd /home/hugo/Escritorio/OSv2.0/build && $(MAKE) -f src/CMakeFiles/START.ELF.dir/build.make src/CMakeFiles/START.ELF.dir/start/ND_Timer.cpp.s
-.PHONY : start/ND_Timer.cpp.s
+start/String.cpp.s:
+	cd /home/hugo/Escritorio/OSvFinal/build && $(MAKE) -f src/CMakeFiles/START.ELF.dir/build.make src/CMakeFiles/START.ELF.dir/start/String.cpp.s
+.PHONY : start/String.cpp.s
 
 start/Terminal.o: start/Terminal.cpp.o
 .PHONY : start/Terminal.o
 
 # target to build an object file
 start/Terminal.cpp.o:
-	cd /home/hugo/Escritorio/OSv2.0/build && $(MAKE) -f src/CMakeFiles/START.ELF.dir/build.make src/CMakeFiles/START.ELF.dir/start/Terminal.cpp.o
+	cd /home/hugo/Escritorio/OSvFinal/build && $(MAKE) -f src/CMakeFiles/START.ELF.dir/build.make src/CMakeFiles/START.ELF.dir/start/Terminal.cpp.o
 .PHONY : start/Terminal.cpp.o
 
 start/Terminal.i: start/Terminal.cpp.i
@@ -454,7 +406,7 @@ start/Terminal.i: start/Terminal.cpp.i
 
 # target to preprocess a source file
 start/Terminal.cpp.i:
-	cd /home/hugo/Escritorio/OSv2.0/build && $(MAKE) -f src/CMakeFiles/START.ELF.dir/build.make src/CMakeFiles/START.ELF.dir/start/Terminal.cpp.i
+	cd /home/hugo/Escritorio/OSvFinal/build && $(MAKE) -f src/CMakeFiles/START.ELF.dir/build.make src/CMakeFiles/START.ELF.dir/start/Terminal.cpp.i
 .PHONY : start/Terminal.cpp.i
 
 start/Terminal.s: start/Terminal.cpp.s
@@ -462,7 +414,7 @@ start/Terminal.s: start/Terminal.cpp.s
 
 # target to generate assembly for a file
 start/Terminal.cpp.s:
-	cd /home/hugo/Escritorio/OSv2.0/build && $(MAKE) -f src/CMakeFiles/START.ELF.dir/build.make src/CMakeFiles/START.ELF.dir/start/Terminal.cpp.s
+	cd /home/hugo/Escritorio/OSvFinal/build && $(MAKE) -f src/CMakeFiles/START.ELF.dir/build.make src/CMakeFiles/START.ELF.dir/start/Terminal.cpp.s
 .PHONY : start/Terminal.cpp.s
 
 start/boot.o: start/boot.asm.o
@@ -470,8 +422,16 @@ start/boot.o: start/boot.asm.o
 
 # target to build an object file
 start/boot.asm.o:
-	cd /home/hugo/Escritorio/OSv2.0/build && $(MAKE) -f src/CMakeFiles/START.ELF.dir/build.make src/CMakeFiles/START.ELF.dir/start/boot.asm.o
+	cd /home/hugo/Escritorio/OSvFinal/build && $(MAKE) -f src/CMakeFiles/START.ELF.dir/build.make src/CMakeFiles/START.ELF.dir/start/boot.asm.o
 .PHONY : start/boot.asm.o
+
+start/sound.o: start/sound.asm.o
+.PHONY : start/sound.o
+
+# target to build an object file
+start/sound.asm.o:
+	cd /home/hugo/Escritorio/OSvFinal/build && $(MAKE) -f src/CMakeFiles/START.ELF.dir/build.make src/CMakeFiles/START.ELF.dir/start/sound.asm.o
+.PHONY : start/sound.asm.o
 
 # Help Target
 help:
@@ -486,46 +446,41 @@ help:
 	@echo "... install/strip"
 	@echo "... list_install_components"
 	@echo "... rebuild_cache"
+	@echo "... start/GDT.o"
+	@echo "... start/GDT.i"
+	@echo "... start/GDT.s"
+	@echo "... start/IDT.o"
+	@echo "... start/IDT.i"
+	@echo "... start/IDT.s"
+	@echo "... start/IRQ.o"
+	@echo "... start/IRQ.i"
+	@echo "... start/IRQ.s"
+	@echo "... start/ISR.o"
+	@echo "... start/ISR.i"
+	@echo "... start/ISR.s"
 	@echo "... start/Kernel.o"
 	@echo "... start/Kernel.i"
 	@echo "... start/Kernel.s"
-	@echo "... start/ND_GDT.o"
-	@echo "... start/ND_GDT.i"
-	@echo "... start/ND_GDT.s"
-	@echo "... start/ND_IDT.o"
-	@echo "... start/ND_IDT.i"
-	@echo "... start/ND_IDT.s"
-	@echo "... start/ND_IRQ.o"
-	@echo "... start/ND_IRQ.i"
-	@echo "... start/ND_IRQ.s"
-	@echo "... start/ND_ISR.o"
-	@echo "... start/ND_ISR.i"
-	@echo "... start/ND_ISR.s"
-	@echo "... start/ND_Keyboard.o"
-	@echo "... start/ND_Keyboard.i"
-	@echo "... start/ND_Keyboard.s"
-	@echo "... start/ND_Memory.o"
-	@echo "... start/ND_Memory.i"
-	@echo "... start/ND_Memory.s"
-	@echo "... start/ND_Panic.o"
-	@echo "... start/ND_Panic.i"
-	@echo "... start/ND_Panic.s"
-	@echo "... start/ND_Ports.o"
-	@echo "... start/ND_Ports.i"
-	@echo "... start/ND_Ports.s"
-	@echo "... start/ND_Screen.o"
-	@echo "... start/ND_Screen.i"
-	@echo "... start/ND_Screen.s"
-	@echo "... start/ND_String.o"
-	@echo "... start/ND_String.i"
-	@echo "... start/ND_String.s"
-	@echo "... start/ND_Timer.o"
-	@echo "... start/ND_Timer.i"
-	@echo "... start/ND_Timer.s"
+	@echo "... start/Keyboard.o"
+	@echo "... start/Keyboard.i"
+	@echo "... start/Keyboard.s"
+	@echo "... start/Memory.o"
+	@echo "... start/Memory.i"
+	@echo "... start/Memory.s"
+	@echo "... start/Ports.o"
+	@echo "... start/Ports.i"
+	@echo "... start/Ports.s"
+	@echo "... start/Screen.o"
+	@echo "... start/Screen.i"
+	@echo "... start/Screen.s"
+	@echo "... start/String.o"
+	@echo "... start/String.i"
+	@echo "... start/String.s"
 	@echo "... start/Terminal.o"
 	@echo "... start/Terminal.i"
 	@echo "... start/Terminal.s"
 	@echo "... start/boot.o"
+	@echo "... start/sound.o"
 .PHONY : help
 
 
@@ -537,6 +492,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /home/hugo/Escritorio/OSv2.0/build && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /home/hugo/Escritorio/OSvFinal/build && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 
