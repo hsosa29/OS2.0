@@ -1,5 +1,5 @@
-PROJECT(NextDivel-nextroot)
+PROJECT(ProyectoSO-iso)
 
-MESSAGE(STATUS "Creating NextRoot directory")
+MESSAGE(STATUS "Creando Directorio")
 INSTALL(DIRECTORY ../grub DESTINATION boot)
 INSTALL(DIRECTORY ../include DESTINATION .)

@@ -207,12 +207,6 @@ CMAKE_USE_RELATIVE_PATHS:BOOL=OFF
 CMAKE_VERBOSE_MAKEFILE:BOOL=FALSE
 
 //Value Computed by CMake
-NextDivel-nextroot_BINARY_DIR:STATIC=/home/hugo/Escritorio/OSvFinal/build/root
-
-//Value Computed by CMake
-NextDivel-nextroot_SOURCE_DIR:STATIC=/home/hugo/Escritorio/OSvFinal/root
-
-//Value Computed by CMake
 ProyectoSO-iso_BINARY_DIR:STATIC=/home/hugo/Escritorio/OSvFinal/build/iso
 
 //Value Computed by CMake

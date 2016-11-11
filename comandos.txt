@@ -8,6 +8,10 @@ chmod +x iso.sh
 ./iso.sh
 qemu-system-i386 -cdrom ProyectoSO.iso
 
+git add -A
+git commit -m "Comentario"
+git push
+
 git tag v2.1 -m "Version 2.1"
 git push origin v2.1
 

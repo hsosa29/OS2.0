@@ -123,6 +123,9 @@ void Terminal::Comandos::Sonido()
 
 		"mov %ax, 2;"
 		);
+
+speaker_beep();
+
 }
 
 void Terminal::Comandos::Beep()
