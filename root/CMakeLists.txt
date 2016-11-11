@@ -1,5 +1,0 @@
-PROJECT(ProyectoSO-iso)
-
-MESSAGE(STATUS "Creando Directorio")
-INSTALL(DIRECTORY ../grub DESTINATION boot)
-INSTALL(DIRECTORY ../include DESTINATION .)
